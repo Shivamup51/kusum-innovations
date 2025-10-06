@@ -124,10 +124,10 @@ export default function VideoProduction() {
                                     From corporate films, product launch videos, brand commercials, event coverage, and testimonial videos to social media ads and promotional campaigns, we handle everything – concept, scripting, shooting, editing, and final delivery – under one roof.
                                 </p>
                                 <p>
-                                    At Kusum Innovations, we combine creative storytelling, cinematic visuals, and advanced production technology to craft videos that do more than just look good – they deliver results. With industry-standard equipment, a skilled crew, and years of experience, we ensure your video stands out in today's competitive digital space.
+                                    At Kusum Innovations, we combine creative storytelling, cinematic visuals, and advanced production technology to craft videos that do more than just look good – they deliver results. With industry-standard equipment, a skilled crew, and years of experience, we ensure your video stands out in today&apos;s competitive digital space.
                                 </p>
                                 <p>
-                                    When you choose Kusum Innovations, you're not just hiring a production team – you're partnering with experts who understand the power of live video content in driving engagement and conversions. Whether it's a corporate shoot, ad film, or event highlight, we bring your vision to life with clarity, creativity, and impact.
+                                    When you choose Kusum Innovations, you&apos;re not just hiring a production team – you&apos;re partnering with experts who understand the power of live video content in driving engagement and conversions. Whether it&apos;s a corporate shoot, ad film, or event highlight, we bring your vision to life with clarity, creativity, and impact.
                                 </p>
                             </div>
                         </div>
@@ -141,7 +141,7 @@ export default function VideoProduction() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Video Production Services</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Comprehensive video solutions tailored to your brand's unique needs and objectives.
+                            Comprehensive video solutions tailored to your brand&apos;s unique needs and objectives.
                         </p>
                     </div>
 
@@ -284,7 +284,7 @@ export default function VideoProduction() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than just a video production company—we're your creative partner in bringing ideas to life.
+                                At Kusum Innovations, we&apos;re more than just a video production company—we&apos;re your creative partner in bringing ideas to life.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -350,7 +350,7 @@ export default function VideoProduction() {
                         Searching for a Professional Video Production Company in Delhi?
                     </h2>
                     <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-                        Let's bring your vision to life through expertly executed video production—from brand films and corporate videos to product promos—crafted to captivate and inspire unforgettable stories.
+                        Let&apos;s bring your vision to life through expertly executed video production—from brand films and corporate videos to product promos—crafted to captivate and inspire unforgettable stories.
                     </p>
                     <div className="flex justify-center mb-12">
                         <Link 
@@ -363,7 +363,7 @@ export default function VideoProduction() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            "Lights, camera, action—your story deserves to be told."
+                            &quot;Lights, camera, action—your story deserves to be told.&quot;
                         </p>
                         <p className="text-gray-600">Contact us today for a free quote.</p>
                     </div>

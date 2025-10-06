@@ -121,7 +121,7 @@ export default function Photography() {
                                     At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we specialize in professional photography services that go beyond just pictures—we create stories. As one of the top photography companies in Delhi-NCR, we deliver tailored shoots for brands, businesses, and individuals who want impact. From product launches and interiors to food menus and corporate portraits, our lens is guided by creativity, detail, and purpose.
                                 </p>
                                 <p>
-                                    Photography, to us, is storytelling with light. Every frame is crafted to communicate your brand's essence, showcase your individuality, and capture emotions that connect with your audience. From concept to execution, our team ensures clarity, consistency, and visual excellence across all platforms.
+                                    Photography, to us, is storytelling with light. Every frame is crafted to communicate your brand&apos;s essence, showcase your individuality, and capture emotions that connect with your audience. From concept to execution, our team ensures clarity, consistency, and visual excellence across all platforms.
                                 </p>
                                 <p>
                                     With a client-first approach and passion for storytelling, we transform ideas into compelling imagery. Partner with Kusum Innovations to inspire, engage, and grow your brand visually.
@@ -138,7 +138,7 @@ export default function Photography() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Photography Services</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Comprehensive photography solutions crafted to capture your brand's vision and story.
+                            Comprehensive photography solutions crafted to capture your brand&apos;s vision and story.
                         </p>
                     </div>
 
@@ -281,7 +281,7 @@ export default function Photography() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we are more than just photographers—we're your creative partner in telling stories that captivate and endure.
+                                At Kusum Innovations, we are more than just photographers—we&apos;re your creative partner in telling stories that captivate and endure.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -360,7 +360,7 @@ export default function Photography() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            "Every frame tells a story. Let's shoot something amazing together."
+                            "Every frame tells a story. Let&apos;s shoot something amazing together."
                         </p>
                         <p className="text-gray-600">Contact us today to book your session or request a custom quote.</p>
                     </div>

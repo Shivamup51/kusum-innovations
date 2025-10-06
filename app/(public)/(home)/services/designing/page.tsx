@@ -121,7 +121,7 @@ export default function Design() {
                                     At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we design powerful visuals that elevate your brand and create lasting impressions. As a leading graphic design agency in Delhi NCR, we offer a wide range of services—logos, brochures, marketing collaterals, menu cards, and more. Our team blends creativity with strategy to help businesses of all sizes stand out in a competitive landscape.
                                 </p>
                                 <p>
-                                    We believe design is more than aesthetics—it's storytelling. Every element we create communicates your values, reflects your identity, and connects with your audience on a deeper level. From concept to execution, we ensure clarity, consistency, and visual excellence across all platforms.
+                                    We believe design is more than aesthetics—it&apos;s storytelling. Every element we create communicates your values, reflects your identity, and connects with your audience on a deeper level. From concept to execution, we ensure clarity, consistency, and visual excellence across all platforms.
                                 </p>
                                 <p>
                                     With a client-first approach and passion for innovation, we transform ideas into impactful designs. Partner with Kusum Innovations to inspire, engage, and grow your brand.
@@ -281,7 +281,7 @@ export default function Design() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than just a graphic design agency—we're your creative partner in building brands that inspire and endure.
+                                At Kusum Innovations, we&apos;re more than just a graphic design agency—we&apos;re your creative partner in building brands that inspire and endure.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -320,7 +320,7 @@ export default function Design() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify design for you.
+                            Your questions, our answers—let&apos;s simplify design for you.
                         </p>
                     </div>
                     
@@ -360,7 +360,7 @@ export default function Design() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            "Turning ideas into impact. Let's design something remarkable together."
+                            &quot;Turning ideas into impact. Let&apos;s design something remarkable together.&quot;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>
