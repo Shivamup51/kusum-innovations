@@ -360,7 +360,7 @@ export default function Photography() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            "Every frame tells a story. Let&apos;s shoot something amazing together."
+                            &ldquo;Every frame tells a story. Let&apos;s shoot something amazing together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today to book your session or request a custom quote.</p>
                     </div>
