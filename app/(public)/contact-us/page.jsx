@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageSquare, Users, Award } from "lucide-react"
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/ui/navbar"
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({
