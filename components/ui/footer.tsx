@@ -127,7 +127,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-6">Our Services</h3>
                         <ul className="space-y-3">
-                            {services.slice(0, 6).map((service, index) => (
+                            {services.map((service, index) => (
                                 <li key={index}>
                                     <Link 
                                         href={service.href}

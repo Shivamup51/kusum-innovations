@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "./button";
 
 export default function Navbar() {
@@ -20,68 +20,23 @@ export default function Navbar() {
   }, []);
 
   const services = [
-    {
-      name: "Designing",
-      icon: "🎨",
-      desc: "Creative visual solutions",
-      href: "/services/designing",
-    },
+    { name: "Designing", icon: "🎨", desc: "Creative visual solutions", href: "/services/designing" },
     { name: "Website Development", icon: "💻", desc: "Modern web experiences", href: "/services/website-development" },
-    {
-      name: "Mobile App Development",
-      icon: "📱",
-      desc: "Native & cross-platform",
-      href: "/services/mobile-app-development",
-    },
-    {
-      name: "Social Media Marketing",
-      icon: "📢",
-      desc: "Engage your audience",
-      href: "/services/social-media-marketing",
-    },
-    {
-      name: "Search Engine Optimisation",
-      icon: "🔍",
-      desc: "Boost your visibility",
-      href: "/services/search-engine-optimisation",
-    },
-    {
-      name: "Paid Advertising",
-      icon: "💰",
-      desc: "Targeted campaigns",
-      href: "/services/paid-advertising",
-    },
-    {
-      name: "Video Production",
-      icon: "🎬",
-      desc: "Professional content",
-      href: "/services/video-production",
-    },
-    {
-      name: "2D/ 3D Animations",
-      icon: "🎭",
-      desc: "Bring ideas to life",
-      href: "/services/2d-animation",
-    },
-    {
-      name: "Photography",
-      icon: "📸",
-      desc: "Capture moments",
-      href: "/services/photography",
-    },
-    {
-      name: "Audio Services",
-      icon: "🎵",
-      desc: "Sound that resonates",
-      href: "/services/audio-services",
-    },
+    { name: "Mobile App Development", icon: "📱", desc: "Native & cross-platform", href: "/services/mobile-app-development" },
+    { name: "Social Media Marketing", icon: "📢", desc: "Engage your audience", href: "/services/social-media-marketing" },
+    { name: "Search Engine Optimisation", icon: "🔍", desc: "Boost your visibility", href: "/services/search-engine-optimisation" },
+    { name: "Paid Advertising", icon: "💰", desc: "Targeted campaigns", href: "/services/paid-advertising" },
+    { name: "Video Production", icon: "🎬", desc: "Professional content", href: "/services/video-production" },
+    { name: "2D/ 3D Animations", icon: "🎭", desc: "Bring ideas to life", href: "/services/2d-animation" },
+    { name: "Photography", icon: "📸", desc: "Capture moments", href: "/services/photography" },
+    { name: "Audio Services", icon: "🎵", desc: "Sound that resonates", href: "/services/audio-services" },
   ];
 
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
     { name: "Services", href: "#", hasDropdown: true },
-    { name: "Blog", href: "/blog" },  
+    { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -135,8 +90,7 @@ export default function Navbar() {
                           <div
                             className="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
                             style={{
-                              background:
-                                "linear-gradient(to right, #B944EA, #00B7FF)",
+                              background: "linear-gradient(to right, #B944EA, #00B7FF)",
                             }}
                           ></div>
                         </button>
@@ -185,8 +139,7 @@ export default function Navbar() {
                         <div
                           className="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
                           style={{
-                            background:
-                              "linear-gradient(to right, #B944EA, #00B7FF)",
+                            background: "linear-gradient(to right, #B944EA, #00B7FF)",
                           }}
                         ></div>
                       </Link>
@@ -224,9 +177,9 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ✅ Mobile Navigation (Fixed to Global Dropdown, No Sidebar) */}
+      {/* Mobile Navigation - Simple dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden w-full bg-white/95 backdrop-blur-xl shadow-lg border-t border-gray-200/50 px-6 py-4">
+        <div className="lg:hidden w-full bg-white/95 backdrop-blur-xl shadow-lg border-t border-gray-200/50 px-6 py-4 mt-20">
           <div className="space-y-2">
             {navItems.map((item) => (
               <div key={item.name}>
