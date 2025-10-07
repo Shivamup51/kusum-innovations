@@ -54,7 +54,7 @@ export default function AudioServices() {
                                     We create <span className="font-semibold text-[#B944EA]">powerful audio experiences</span> that resonate, engage, and inspire.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    From concept to final mix, we bring your brand's voice to life with clarity, creativity, and precision.
+                                    From concept to final mix, we bring your brand&apos;s voice to life with clarity, creativity, and precision.
                                 </p>
                             </div>
                             
@@ -121,7 +121,7 @@ export default function AudioServices() {
                                     At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we offer premium audio services designed to amplify your brand identity and connect with audiences worldwide. As a trusted audio production company in Delhi-NCR, we specialize in corporate anthem production, jingle creation, multilingual voice overs, professional dubbing, and content localization through translation and transcription services.
                                 </p>
                                 <p>
-                                    With a network of 127+ multilingual artists, native speakers, and seasoned composers, we combine technical excellence with creative artistry. Whether it's launching a campaign, building internal culture, or expanding to new markets, we ensure every sound captures attention, communicates meaning, and leaves a lasting impression.
+                                    With a network of 127+ multilingual artists, native speakers, and seasoned composers, we combine technical excellence with creative artistry. Whether it&apos;s launching a campaign, building internal culture, or expanding to new markets, we ensure every sound captures attention, communicates meaning, and leaves a lasting impression.
                                 </p>
                                 <p>
                                     With a client-first approach and passion for storytelling, Kusum Innovations transforms ideas into impactful audio experiences. Partner with us to inspire, engage, and elevate your brand through the power of sound.
@@ -138,7 +138,7 @@ export default function AudioServices() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Audio Services</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Tailored audio services that transform your brand's message into memorable soundscapes.
+                            Tailored audio services that transform your brand&apos;s message into memorable soundscapes.
                         </p>
                     </div>
 
@@ -281,7 +281,7 @@ export default function AudioServices() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than an audio agency—we're your creative partner in crafting sound that inspires and endures.
+                                At Kusum Innovations, we&apos;re more than an audio agency—we&apos;re your creative partner in crafting sound that inspires and endures.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -320,7 +320,7 @@ export default function AudioServices() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions (FAQs)</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify audio services for you.
+                            Your questions, our answers—let&apos;s simplify audio services for you.
                         </p>
                     </div>
                     
@@ -344,7 +344,7 @@ export default function AudioServices() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#B944EA]/10 via-transparent to-[#00B7FF]/10"></div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                        Ready to amplify your brand's voice?
+                        Ready to amplify your brand&apos;s voice?
                     </h2>
                     <p className="text-xl text-gray-600 mb-12 leading-relaxed">
                         We transform ideas into impactful audio—corporate anthems, jingles, multilingual voice overs, and more—that resonate across audiences with clarity and creativity.
@@ -360,7 +360,7 @@ export default function AudioServices() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Let your brand be heard. Let's craft sound that speaks volume together.&rdquo;
+                            &ldquo;Let your brand be heard. Let&apos;s craft sound that speaks volume together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>

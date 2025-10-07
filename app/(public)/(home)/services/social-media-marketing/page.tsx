@@ -54,7 +54,7 @@ export default function SocialMediaMarketing() {
                                     We create <span className="font-semibold text-[#B944EA]">powerful social media strategies</span> that captivate, connect, and convert.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    From strategy to execution, we bring your brand's voice to life with creativity, data, and precision.
+                                    From strategy to execution, we bring your brand&apos;s voice to life with creativity, data, and precision.
                                 </p>
                             </div>
                             
@@ -118,10 +118,10 @@ export default function SocialMediaMarketing() {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we help businesses grow through impactful social media marketing services in Delhi-NCR. As a trusted social media marketing company, we deliver creative, customized, and result-oriented campaigns designed for startups, small businesses, and established brands alike. Whether you need affordable social media marketing packages or a full-service digital growth partner, our team blends creativity with data to maximize your brand's reach and impact.
+                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we help businesses grow through impactful social media marketing services in Delhi-NCR. As a trusted social media marketing company, we deliver creative, customized, and result-oriented campaigns designed for startups, small businesses, and established brands alike. Whether you need affordable social media marketing packages or a full-service digital growth partner, our team blends creativity with data to maximize your brand&apos;s reach and impact.
                                 </p>
                                 <p>
-                                    We believe social media is more than posting—it's storytelling, engagement, and relationship-building. Every campaign we craft is tailored to reflect your identity, connect with your audience, and deliver measurable results. From Facebook and Instagram to LinkedIn and Twitter, we ensure your brand stays relevant, engaging, and impactful across platforms.
+                                    We believe social media is more than posting—it&apos;s storytelling, engagement, and relationship-building. Every campaign we craft is tailored to reflect your identity, connect with your audience, and deliver measurable results. From Facebook and Instagram to LinkedIn and Twitter, we ensure your brand stays relevant, engaging, and impactful across platforms.
                                 </p>
                                 <p>
                                     With a client-first approach and expertise across platforms, Kusum Innovations transforms your online presence into a growth engine. Partner with us to amplify your reach, drive conversions, and build meaningful digital connections.
@@ -281,7 +281,7 @@ export default function SocialMediaMarketing() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than just a social media agency—we're your growth partner in building impactful digital connections.
+                                At Kusum Innovations, we&apos;re more than just a social media agency—we&apos;re your growth partner in building impactful digital connections.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -320,7 +320,7 @@ export default function SocialMediaMarketing() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions (FAQs)</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify social media for you.
+                            Your questions, our answers—let&apos;s simplify social media for you.    
                         </p>
                     </div>
                     
@@ -360,7 +360,7 @@ export default function SocialMediaMarketing() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Turning posts into impact. Let's grow your brand together.&rdquo;
+                            &ldquo;Turning posts into impact. Let&apos;s grow your brand together.&rdquo;    
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>

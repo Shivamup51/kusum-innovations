@@ -121,7 +121,7 @@ export default function PaidAdvertising() {
                                     At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we create powerful paid advertising campaigns that fuel growth and visibility. As a leading ads management company in Delhi-NCR, we help businesses of all sizes tap into the potential of platforms like Google, Meta, YouTube, LinkedIn, Twitter, and WhatsApp.
                                 </p>
                                 <p>
-                                    We believe advertising is more than impressions—it's about outcomes. Every campaign we design is rooted in strategy, creativity, and analytics to ensure it delivers real results. From scroll-stopping creatives to ROI-driven ad targeting, we make sure your brand speaks louder, performs better, and reaches further.
+                                    We believe advertising is more than impressions—it&apos;s about outcomes. Every campaign we design is rooted in strategy, creativity, and analytics to ensure it delivers real results. From scroll-stopping creatives to ROI-driven ad targeting, we make sure your brand speaks louder, performs better, and reaches further.
                                 </p>
                                 <p>
                                     With a dedicated team and data-driven approach, Kusum Innovations transforms ad spend into measurable success. Partner with us to reach the right audience, maximize your budget, and scale your business with precision.
@@ -281,7 +281,7 @@ export default function PaidAdvertising() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than an ads agency—we're growth partners focused on your success.
+                                At Kusum Innovations, we&apos;re more than an ads agency—we&apos;re growth partners focused on your success.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -320,7 +320,7 @@ export default function PaidAdvertising() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify paid advertising for you.
+                            Your questions, our answers—let&apos;s simplify paid advertising for you.
                         </p>
                     </div>
                     
@@ -360,7 +360,7 @@ export default function PaidAdvertising() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Turning clicks into customers. Let's advertise smarter, together.&rdquo;
+                            &ldquo;Turning clicks into customers. Let&apos;s advertise smarter, together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>

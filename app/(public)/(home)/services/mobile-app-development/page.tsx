@@ -118,10 +118,10 @@ export default function MobileAppDevelopment() {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we specialize in developing high-performance, feature-rich mobile applications that empower businesses to thrive in today's digital-first world. As a trusted mobile app development company in Delhi-NCR, we design scalable solutions for Android, iOS, and cross-platform that are fast, functional, and user-focused.
+                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we specialize in developing high-performance, feature-rich mobile applications that empower businesses to thrive in today&apos;s digital-first world. As a trusted mobile app development company in Delhi-NCR, we design scalable solutions for Android, iOS, and cross-platform that are fast, functional, and user-focused.
                                 </p>
                                 <p>
-                                    We believe apps should do more than work—they should solve problems, enhance experiences, and accelerate growth. From sleek UI/UX designs to secure backend integrations, our team manages the entire process under one roof. Whether you're a startup or an enterprise, we create mobile solutions tailored to engage your customers and give you a competitive edge.
+                                    We believe apps should do more than work—they should solve problems, enhance experiences, and accelerate growth. From sleek UI/UX designs to secure backend integrations, our team manages the entire process under one roof. Whether you&apos;re a startup or an enterprise, we create mobile solutions tailored to engage your customers and give you a competitive edge.
                                 </p>
                                 <p>
                                     With innovation at the core and strategy in execution, Kusum Innovations transforms your app idea into a digital product that drives real impact.
@@ -283,7 +283,7 @@ export default function MobileAppDevelopment() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than developers—we're your innovation partner in mobile-first growth.
+                                At Kusum Innovations, we&apos;re more than developers—we&apos;re your innovation partner in mobile-first growth.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -362,7 +362,7 @@ export default function MobileAppDevelopment() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Smart, scalable, and built for growth—let's create your mobile future together.&rdquo;
+                            &ldquo;Smart, scalable, and built for growth—let&apos;s create your mobile future together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today to start building your next big app.</p>
                     </div>

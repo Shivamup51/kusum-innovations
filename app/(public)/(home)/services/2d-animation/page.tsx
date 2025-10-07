@@ -118,10 +118,10 @@ export default function Animation2D() {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we don't just design animations—we craft visual experiences that bring ideas to life. As a leading 2D and 3D animation company in Delhi-NCR, we transform complex concepts into compelling stories that educate, inspire, and convert.
+                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we don&apos;t just design animations—we craft visual experiences that bring ideas to life. As a leading 2D and 3D animation company in Delhi-NCR, we transform complex concepts into compelling stories that educate, inspire, and convert.
                                 </p>
                                 <p>
-                                    Whether you're launching a product, explaining a service, or engaging audiences on social media, our animation team combines creativity, strategy, and technology to deliver content that resonates. From character animations to cinematic 3D visualizations, we ensure every project reflects your brand identity and connects with your audience.
+                                    Whether you&apos;re launching a product, explaining a service, or engaging audiences on social media, our animation team combines creativity, strategy, and technology to deliver content that resonates. From character animations to cinematic 3D visualizations, we ensure every project reflects your brand identity and connects with your audience.
                                 </p>
                                 <p>
                                     With expertise across industries and tools like After Effects, Blender, Maya, and Cinema 4D, we create animations that merge imagination with precision. Our goal is simple—deliver powerful visuals that leave lasting impressions and drive real business outcomes.
@@ -285,7 +285,7 @@ export default function Animation2D() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, animation is more than visuals—it's storytelling with purpose.
+                                At Kusum Innovations, animation is more than visuals—it&apos;s storytelling with purpose.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -324,7 +324,7 @@ export default function Animation2D() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify animation for you.
+                            Your questions, our answers—let&apos;s simplify animation for you.
                         </p>
                     </div>
                     
@@ -348,7 +348,7 @@ export default function Animation2D() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#B944EA]/10 via-transparent to-[#00B7FF]/10"></div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                        Let's Animate Your Story
+                        Let&apos;s Animate Your Story
                     </h2>
                     <p className="text-xl text-gray-600 mb-12 leading-relaxed">
                         Ready to bring your ideas to life? From 2D explainers to high-end 3D product videos, we craft animations that captivate and convert.
@@ -364,7 +364,7 @@ export default function Animation2D() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Visuals that move, stories that inspire—let's create something extraordinary together.&rdquo;
+                            &ldquo;Visuals that move, stories that inspire—let&apos;s create something extraordinary together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>

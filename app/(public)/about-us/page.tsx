@@ -132,7 +132,7 @@ export default function AboutUs() {
                                     Founded on <span className="font-semibold text-[#B944EA]">29th June 2016</span>, Kusum Innovations is a trusted name in developing websites and mobile apps, digital marketing, and video production in Delhi-NCR. In a fast-paced industry where trends often overshadow creativity, we focus on delivering impactful strategies and visually compelling content.
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    Over the years, we've had the privilege of working with a diverse range of clients—startups, established brands, and enterprises—helping them bring their ideas to life through innovative digital solutions.
+                                    Over the years, we&apos;ve had the privilege of working with a diverse range of clients—startups, established brands, and enterprises—helping them bring their ideas to life through innovative digital solutions.
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed">
                                     With a potent blend of creativity, technology, and strategic thinking, we craft experiences that not only look great but also drive real results. From designing intuitive websites and mobile apps to creating engaging ad campaigns and powerful visual stories, we are dedicated to helping brands connect, grow, and leave a lasting impression.
@@ -173,7 +173,7 @@ export default function AboutUs() {
                                     At Kusum Innovations, our mission is fuelled by ambition, creativity, and a relentless pursuit of excellence. We aim to be among the best advertising agencies and video production companies in the industry—delivering not just services, but experiences that inspire and engage.
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    Every project is guided by innovation, attention to detail, and a deep understanding of our client's vision. Through a powerful mix of digital marketing, creative content, and technology-driven solutions, we strive to fuel growth, boost visibility, and make a meaningful difference for the brands we serve.
+                                    Every project is guided by innovation, attention to detail, and a deep understanding of our client&apos;s vision. Through a powerful mix of digital marketing, creative content, and technology-driven solutions, we strive to fuel growth, boost visibility, and make a meaningful difference for the brands we serve.
                                 </p>
                             </CardContent>
                         </Card>
@@ -327,7 +327,7 @@ export default function AboutUs() {
                         Ready to Create Something Amazing?
                     </h2>
                     <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                        Let's transform your ideas into impactful experiences that drive growth and inspire your audience.
+                        Let&apos;s transform your ideas into impactful experiences that drive growth and inspire your audience.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact-us" className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#B944EA] font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">

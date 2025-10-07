@@ -124,10 +124,10 @@ export default function WebsiteDevelopment() {
                                     Recognized as a leading web design and development company in Delhi-NCR, we specialize in crafting digital platforms that are fast, secure, and user focused. Every project is tailored to align with your business goals and audience expectations.
                                 </p>
                                 <p>
-                                    Whether you're a startup building your first online presence or an enterprise upgrading an existing platform, our team blends creativity, strategy, and cutting-edge technology to deliver impactful solutions. From intuitive interfaces to responsive performance, we ensure every website reflects your brand identity and enhances user engagement.
+                                    Whether you&apos;re a startup building your first online presence or an enterprise upgrading an existing platform, our team blends creativity, strategy, and cutting-edge technology to deliver impactful solutions. From intuitive interfaces to responsive performance, we ensure every website reflects your brand identity and enhances user engagement.
                                 </p>
                                 <p>
-                                    With years of experience and a proven track record, we've helped businesses across industries scale digitally. Our mission is simple—design websites that look great, perform flawlessly, and generate real business value.
+                                    With years of experience and a proven track record, we&apos;ve helped businesses across industries scale digitally. Our mission is simple—design websites that look great, perform flawlessly, and generate real business value.
                                 </p>
                             </div>
                         </div>
@@ -288,7 +288,7 @@ export default function WebsiteDevelopment() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we don't just design websites—we craft growth engines for your business.
+                                At Kusum Innovations, we don&apos;t just design websites—we craft growth engines for your business.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -327,7 +327,7 @@ export default function WebsiteDevelopment() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify website development for you.
+                            Your questions, our answers—let&apos;s simplify website development for you.
                         </p>
                     </div>
                     
@@ -351,7 +351,7 @@ export default function WebsiteDevelopment() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#B944EA]/10 via-transparent to-[#00B7FF]/10"></div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                        Let's Build Something Game-Changing
+                        Let&apos;s Build Something Game-Changing
                     </h2>
                     <p className="text-xl text-gray-600 mb-12 leading-relaxed">
                         Looking for a web designing company in Delhi that blends creativity, technology, and strategy? Partner with Kusum Innovations to turn your website into your biggest business asset.
@@ -367,7 +367,7 @@ export default function WebsiteDevelopment() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Your ideal website is just one step away—let's make it real together.&rdquo;
+                            &ldquo;Your ideal website is just one step away—let&apos;s make it real together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>

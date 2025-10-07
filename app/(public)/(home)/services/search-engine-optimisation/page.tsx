@@ -124,7 +124,7 @@ export default function SEO() {
                                     Whether you are a startup establishing your digital presence or an established brand aiming to strengthen authority, we design SEO strategies tailored to your unique business goals. Our team blends technical expertise with innovative thinking to create solutions that resonate with your audience and align with your objectives.
                                 </p>
                                 <p>
-                                    With affordable SEO packages designed for businesses of all sizes, we make growth accessible and sustainable. In today's ever-evolving digital landscape, Kusum Innovations ensures your brand stays competitive, credible, and optimized for success.
+                                    With affordable SEO packages designed for businesses of all sizes, we make growth accessible and sustainable. In today&apos;s ever-evolving digital landscape, Kusum Innovations ensures your brand stays competitive, credible, and optimized for success.
                                 </p>
                             </div>
                         </div>
@@ -281,7 +281,7 @@ export default function SEO() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, SEO isn't just about rankings—it's about real business growth.
+                                At Kusum Innovations, SEO isn&apos;t just about rankings—it&apos;s about real business growth.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -360,7 +360,7 @@ export default function SEO() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Let's optimize your presence. Let's build your growth story with SEO.&rdquo;
+                            &ldquo;Let&apos;s optimize your presence. Let&apos;s build your growth story with SEO.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact Kusum Innovations today for a free SEO consultation.</p>
                     </div>

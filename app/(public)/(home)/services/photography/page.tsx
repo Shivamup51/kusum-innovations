@@ -118,10 +118,10 @@ export default function Photography() {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we believe every moment has a story worth telling. As a leading photography company in Delhi-NCR, we specialize in capturing life's most precious memories with artistic vision and technical excellence. From corporate events to personal milestones, we transform ordinary moments into extraordinary visual narratives.
+                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we believe every moment has a story worth telling. As a leading photography company in Delhi-NCR, we specialize in capturing life&apos;s most precious memories with artistic vision and technical excellence. From corporate events to personal milestones, we transform ordinary moments into extraordinary visual narratives.
                                 </p>
                                 <p>
-                                    Our team of experienced photographers combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience. Whether it's product photography, event coverage, or creative portraits, we ensure every shot reflects your brand's essence and captures the emotion behind the moment.
+                                    Our team of experienced photographers combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience. Whether it&apos;s product photography, event coverage, or creative portraits, we ensure every shot reflects your brand&apos;s essence and captures the emotion behind the moment.
                                 </p>
                                 <p>
                                     With a passion for storytelling and an eye for detail, Kusum Innovations creates visual content that not only looks beautiful but also drives engagement and builds lasting connections with your audience.
@@ -281,7 +281,7 @@ export default function Photography() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than photographers—we're visual storytellers committed to capturing your moments with excellence.
+                                At Kusum Innovations, we&apos;re more than photographers—we&apos;re visual storytellers committed to capturing your moments with excellence.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -320,7 +320,7 @@ export default function Photography() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify photography for you.
+                            Your questions, our answers—let&apos;s simplify photography for you.
                         </p>
                     </div>
                     
@@ -360,7 +360,7 @@ export default function Photography() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Every frame tells a story. Let's shoot something amazing together.&rdquo;
+                            &ldquo;Every frame tells a story. Let&apos;s shoot something amazing together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>
