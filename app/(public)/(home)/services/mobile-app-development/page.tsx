@@ -3,19 +3,19 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-import { photographyTypes, faqs, processSteps, whyChooseUs } from "./_components/data"
+import { mobileAppTypes, faqs, processSteps, whyChooseUs } from "./_components/data"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Camera, ArrowRight, CheckCircle, Star } from "lucide-react"
+import { Smartphone, ArrowRight, CheckCircle, Star } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-export default function Photography() {
+export default function MobileAppDevelopment() {
     const [activeService, setActiveService] = useState(0)
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveService((prev) => (prev + 1) % photographyTypes.length)
+            setActiveService((prev) => (prev + 1) % mobileAppTypes.length)
         }, 6000)
         return () => clearInterval(interval)
     }, [])
@@ -40,10 +40,10 @@ export default function Photography() {
                         <div className="space-y-4">
                             {/* Main Headline */}
                             <div>
-                                <h1 className="text-4xl md:text-5xl lg:text-5xl font-black text-gray-900 leading-tight tracking-tight mb-6">
-                                    <span className="block whitespace-nowrap">Capturing Moments,</span>
+                                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight tracking-tight mb-6">
+                                    <span className="block whitespace-nowrap">Smart, Scalable Apps</span>
                                     <span className="block whitespace-nowrap bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">
-                                        Creating Impressions
+                                        That Perform
                                     </span>
                                 </h1>
                             </div>
@@ -51,17 +51,17 @@ export default function Photography() {
                             {/* Subtitle */}
                             <div className="space-y-4">
                                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-                                    We capture <span className="font-semibold text-[#B944EA]">stunning visuals</span> that tell your story with authenticity and impact.
+                                    We build <span className="font-semibold text-[#B944EA]">powerful mobile applications</span> that engage, inspire, and deliver results.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    From concept to final edit, we bring your vision to life with creativity, precision, and professional excellence.
+                                    From idea to launch, our apps combine creativity, strategy, and technology to fuel your growth.
                                 </p>
                             </div>
                             
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact-us" className="inline-flex items-center gap-3 px-8 py-4 bg-[#B944EA] hover:bg-[#A03BD6] text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">
-                                    <Camera className="h-5 w-5" />
+                                    <Smartphone className="h-5 w-5" />
                                     Start Your Project
                                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                                 </Link>
@@ -74,8 +74,8 @@ export default function Photography() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop&crop=center" 
-                                        alt="Photography Services" 
+                                        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=450&fit=crop&crop=center" 
+                                        alt="Mobile App Development Services" 
                                         width={600}
                                         height={450}
                                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
@@ -102,8 +102,8 @@ export default function Photography() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop&crop=center" 
-                                    alt="Our Story - Photography Team" 
+                                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=450&fit=crop&crop=center" 
+                                    alt="Our Story - Mobile App Development Team" 
                                     width={600}
                                     height={550}
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -118,13 +118,13 @@ export default function Photography() {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we believe every moment has a story worth telling. As a leading photography company in Delhi-NCR, we specialize in capturing life's most precious memories with artistic vision and technical excellence. From corporate events to personal milestones, we transform ordinary moments into extraordinary visual narratives.
+                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we specialize in developing high-performance, feature-rich mobile applications that empower businesses to thrive in today's digital-first world. As a trusted mobile app development company in Delhi-NCR, we design scalable solutions for Android, iOS, and cross-platform that are fast, functional, and user-focused.
                                 </p>
                                 <p>
-                                    Our team of experienced photographers combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience. Whether it's product photography, event coverage, or creative portraits, we ensure every shot reflects your brand's essence and captures the emotion behind the moment.
+                                    We believe apps should do more than work—they should solve problems, enhance experiences, and accelerate growth. From sleek UI/UX designs to secure backend integrations, our team manages the entire process under one roof. Whether you're a startup or an enterprise, we create mobile solutions tailored to engage your customers and give you a competitive edge.
                                 </p>
                                 <p>
-                                    With a passion for storytelling and an eye for detail, Kusum Innovations creates visual content that not only looks beautiful but also drives engagement and builds lasting connections with your audience.
+                                    With innovation at the core and strategy in execution, Kusum Innovations transforms your app idea into a digital product that drives real impact.
                                 </p>
                             </div>
                         </div>
@@ -136,16 +136,16 @@ export default function Photography() {
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Photography Services</h2>
+                        <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Mobile App Development Services</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Professional photography solutions tailored to capture your story with creativity and precision.
+                            Tailored mobile solutions designed for performance, scalability, and user engagement.
                         </p>
                     </div>
 
                     {/* Service Tabs */}
                     <div className="mb-12">
                         <div className="flex flex-wrap justify-center gap-4">
-                            {photographyTypes.map((service, index) => (
+                            {mobileAppTypes.map((service, index) => (
                                 <button
                                     key={index}
                                     onClick={() => setActiveService(index)}
@@ -167,20 +167,20 @@ export default function Photography() {
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                                 <div>
                                     <div className="text-4xl mb-6 flex items-center gap-2">
-                                        {photographyTypes[activeService].icon}
+                                        {mobileAppTypes[activeService].icon}
                                         <h3 className="text-3xl font-bold text-gray-900">
-                                            {photographyTypes[activeService].title}
+                                            {mobileAppTypes[activeService].title}
                                         </h3>
                                     </div>
                                     <p className="text-lg text-gray-600 leading-relaxed">
-                                        {photographyTypes[activeService].description}
+                                        {mobileAppTypes[activeService].description}
                                     </p>
                                 </div>
                                 <div className="relative">
                                     <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
                                         <Image 
-                                            src={photographyTypes[activeService].image} 
-                                            alt={photographyTypes[activeService].title}
+                                            src={mobileAppTypes[activeService].image} 
+                                            alt={mobileAppTypes[activeService].title}
                                             width={800}
                                             height={600}
                                             className="w-full h-full object-cover"
@@ -203,9 +203,9 @@ export default function Photography() {
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-20">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-6">From Vision to Reality</h2>
+                        <h2 className="text-5xl font-bold text-gray-900 mb-6">From Idea to Impact</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            A streamlined process that transforms your ideas into stunning visual stories.
+                            A streamlined approach that turns app ideas into high-performing digital solutions.
                         </p>
                     </div>
 
@@ -257,8 +257,10 @@ export default function Photography() {
                                                     index === 0 
                                                         ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop&crop=center"
+                                                        ? "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&crop=center"
+                                                        : index === 2
+                                                        ? "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+                                                        : "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -281,7 +283,7 @@ export default function Photography() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than photographers—we're visual storytellers committed to capturing your moments with excellence.
+                                At Kusum Innovations, we're more than developers—we're your innovation partner in mobile-first growth.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -295,7 +297,7 @@ export default function Photography() {
                         <div className="relative">
                             <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&h=450&fit=crop&crop=center" 
+                                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=450&fit=crop&crop=center" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}
@@ -306,7 +308,7 @@ export default function Photography() {
                                     <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Star className="h-10 w-10 text-white" />
                                     </div>
-                                    <p className="text-xl font-medium">Your Vision, Our Passion</p>
+                                    <p className="text-xl font-medium">Your Vision, Our Code</p>
                                 </div>
                             </div>
                         </div>
@@ -318,9 +320,9 @@ export default function Photography() {
             <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                        <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions (FAQs)</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify photography for you.
+                            Building apps made simple—your FAQs, our expert insights
                         </p>
                     </div>
                     
@@ -344,25 +346,25 @@ export default function Photography() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#B944EA]/10 via-transparent to-[#00B7FF]/10"></div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                        Ready to capture your story?
+                        Your users are on mobile. Are you ready to meet them there?
                     </h2>
                     <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-                        We create stunning visuals that tell your story with authenticity and impact—helping you connect with your audience through the power of photography.
+                        We build scalable, user-focused apps that bring your ideas to life and drive results.
                     </p>
                     <div className="flex justify-center mb-12">
                         <Link 
                             href="/contact-us" 
                             className="inline-flex items-center gap-3 px-8 py-4 bg-[#B944EA] hover:bg-[#A03BD6] text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
                         >
-                            Start Your Project
+                            Start Building Your App
                             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Every frame tells a story. Let's shoot something amazing together.&rdquo;
+                            &ldquo;Smart, scalable, and built for growth—let's create your mobile future together.&rdquo;
                         </p>
-                        <p className="text-gray-600">Contact us today for a free consultation.</p>
+                        <p className="text-gray-600">Contact us today to start building your next big app.</p>
                     </div>
                 </div>
             </section>

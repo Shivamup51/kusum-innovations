@@ -3,19 +3,19 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-import { photographyTypes, faqs, processSteps, whyChooseUs } from "./_components/data"
+import { websiteTypes, faqs, processSteps, whyChooseUs } from "./_components/data"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Camera, ArrowRight, CheckCircle, Star } from "lucide-react"
+import { Globe, ArrowRight, CheckCircle, Star } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-export default function Photography() {
+export default function WebsiteDevelopment() {
     const [activeService, setActiveService] = useState(0)
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveService((prev) => (prev + 1) % photographyTypes.length)
+            setActiveService((prev) => (prev + 1) % websiteTypes.length)
         }, 6000)
         return () => clearInterval(interval)
     }, [])
@@ -40,10 +40,10 @@ export default function Photography() {
                         <div className="space-y-4">
                             {/* Main Headline */}
                             <div>
-                                <h1 className="text-4xl md:text-5xl lg:text-5xl font-black text-gray-900 leading-tight tracking-tight mb-6">
-                                    <span className="block whitespace-nowrap">Capturing Moments,</span>
+                                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight tracking-tight mb-6">
+                                    <span className="block whitespace-nowrap">Websites That</span>
                                     <span className="block whitespace-nowrap bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">
-                                        Creating Impressions
+                                        Build Growth
                                     </span>
                                 </h1>
                             </div>
@@ -51,17 +51,17 @@ export default function Photography() {
                             {/* Subtitle */}
                             <div className="space-y-4">
                                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-                                    We capture <span className="font-semibold text-[#B944EA]">stunning visuals</span> that tell your story with authenticity and impact.
+                                    We create <span className="font-semibold text-[#B944EA]">websites that look stunning</span>, work flawlessly, and drive measurable results.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    From concept to final edit, we bring your vision to life with creativity, precision, and professional excellence.
+                                    From strategy to design, development, and launch, our web solutions deliver performance and impact.
                                 </p>
                             </div>
                             
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact-us" className="inline-flex items-center gap-3 px-8 py-4 bg-[#B944EA] hover:bg-[#A03BD6] text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">
-                                    <Camera className="h-5 w-5" />
+                                    <Globe className="h-5 w-5" />
                                     Start Your Project
                                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                                 </Link>
@@ -74,8 +74,8 @@ export default function Photography() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop&crop=center" 
-                                        alt="Photography Services" 
+                                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                        alt="Website Development Services" 
                                         width={600}
                                         height={450}
                                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
@@ -102,8 +102,8 @@ export default function Photography() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop&crop=center" 
-                                    alt="Our Story - Photography Team" 
+                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                    alt="Our Story - Website Development Team" 
                                     width={600}
                                     height={550}
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -118,13 +118,16 @@ export default function Photography() {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we believe every moment has a story worth telling. As a leading photography company in Delhi-NCR, we specialize in capturing life's most precious memories with artistic vision and technical excellence. From corporate events to personal milestones, we transform ordinary moments into extraordinary visual narratives.
+                                    At <span className="font-semibold text-[#B944EA]">Kusum Innovations</span>, we create websites that go beyond design—they deliver measurable growth.
+                                
+                                
+                                    Recognized as a leading web design and development company in Delhi-NCR, we specialize in crafting digital platforms that are fast, secure, and user focused. Every project is tailored to align with your business goals and audience expectations.
                                 </p>
                                 <p>
-                                    Our team of experienced photographers combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience. Whether it's product photography, event coverage, or creative portraits, we ensure every shot reflects your brand's essence and captures the emotion behind the moment.
+                                    Whether you're a startup building your first online presence or an enterprise upgrading an existing platform, our team blends creativity, strategy, and cutting-edge technology to deliver impactful solutions. From intuitive interfaces to responsive performance, we ensure every website reflects your brand identity and enhances user engagement.
                                 </p>
                                 <p>
-                                    With a passion for storytelling and an eye for detail, Kusum Innovations creates visual content that not only looks beautiful but also drives engagement and builds lasting connections with your audience.
+                                    With years of experience and a proven track record, we've helped businesses across industries scale digitally. Our mission is simple—design websites that look great, perform flawlessly, and generate real business value.
                                 </p>
                             </div>
                         </div>
@@ -136,16 +139,16 @@ export default function Photography() {
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Photography Services</h2>
+                        <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Website Development Services</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Professional photography solutions tailored to capture your story with creativity and precision.
+                            Comprehensive web solutions tailored to your business goals and audience needs.
                         </p>
                     </div>
 
                     {/* Service Tabs */}
                     <div className="mb-12">
                         <div className="flex flex-wrap justify-center gap-4">
-                            {photographyTypes.map((service, index) => (
+                            {websiteTypes.map((service, index) => (
                                 <button
                                     key={index}
                                     onClick={() => setActiveService(index)}
@@ -167,20 +170,20 @@ export default function Photography() {
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                                 <div>
                                     <div className="text-4xl mb-6 flex items-center gap-2">
-                                        {photographyTypes[activeService].icon}
+                                        {websiteTypes[activeService].icon}
                                         <h3 className="text-3xl font-bold text-gray-900">
-                                            {photographyTypes[activeService].title}
+                                            {websiteTypes[activeService].title}
                                         </h3>
                                     </div>
                                     <p className="text-lg text-gray-600 leading-relaxed">
-                                        {photographyTypes[activeService].description}
+                                        {websiteTypes[activeService].description}
                                     </p>
                                 </div>
                                 <div className="relative">
                                     <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
                                         <Image 
-                                            src={photographyTypes[activeService].image} 
-                                            alt={photographyTypes[activeService].title}
+                                            src={websiteTypes[activeService].image} 
+                                            alt={websiteTypes[activeService].title}
                                             width={800}
                                             height={600}
                                             className="w-full h-full object-cover"
@@ -203,9 +206,9 @@ export default function Photography() {
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-20">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-6">From Vision to Reality</h2>
+                        <h2 className="text-5xl font-bold text-gray-900 mb-6">From Idea to Execution</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            A streamlined process that transforms your ideas into stunning visual stories.
+                            A proven, step-by-step approach that ensures your website is built to succeed.
                         </p>
                     </div>
 
@@ -257,8 +260,12 @@ export default function Photography() {
                                                     index === 0 
                                                         ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop&crop=center"
+                                                        ? "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+                                                        : index === 2
+                                                        ? "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
+                                                        : index === 3
+                                                        ? "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+                                                        : "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop&crop=center"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -281,7 +288,7 @@ export default function Photography() {
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                At Kusum Innovations, we're more than photographers—we're visual storytellers committed to capturing your moments with excellence.
+                                At Kusum Innovations, we don't just design websites—we craft growth engines for your business.
                             </p>
                             <div className="space-y-4">
                                 {whyChooseUs.map((item, index) => (
@@ -295,7 +302,7 @@ export default function Photography() {
                         <div className="relative">
                             <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&h=450&fit=crop&crop=center" 
+                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&crop=center" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}
@@ -306,7 +313,7 @@ export default function Photography() {
                                     <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Star className="h-10 w-10 text-white" />
                                     </div>
-                                    <p className="text-xl font-medium">Your Vision, Our Passion</p>
+                                    <p className="text-xl font-medium">Your Success, Our Mission</p>
                                 </div>
                             </div>
                         </div>
@@ -320,7 +327,7 @@ export default function Photography() {
                     <div className="text-center mb-16">
                         <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">
-                            Your questions, our answers—let's simplify photography for you.
+                            Your questions, our answers—let's simplify website development for you.
                         </p>
                     </div>
                     
@@ -344,10 +351,10 @@ export default function Photography() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#B944EA]/10 via-transparent to-[#00B7FF]/10"></div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                        Ready to capture your story?
+                        Let's Build Something Game-Changing
                     </h2>
                     <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-                        We create stunning visuals that tell your story with authenticity and impact—helping you connect with your audience through the power of photography.
+                        Looking for a web designing company in Delhi that blends creativity, technology, and strategy? Partner with Kusum Innovations to turn your website into your biggest business asset.
                     </p>
                     <div className="flex justify-center mb-12">
                         <Link 
@@ -360,7 +367,7 @@ export default function Photography() {
                     </div>
                     <div className="text-center">
                         <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Every frame tells a story. Let's shoot something amazing together.&rdquo;
+                            &ldquo;Your ideal website is just one step away—let's make it real together.&rdquo;
                         </p>
                         <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>
