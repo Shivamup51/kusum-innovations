@@ -24,7 +24,7 @@ export default function Blog() {
             date: "2024-01-15",
             readTime: "5 min read",
             category: "Design",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            image: "/blog-img.png",
             featured: true,
             tags: ["Web Design", "UI/UX", "Trends"]
         },

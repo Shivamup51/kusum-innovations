@@ -74,7 +74,7 @@ export default function WebsiteDevelopment() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                        src="/Website Design/Hero Section.jpg" 
                                         alt="Website Development Services" 
                                         width={600}
                                         height={450}
@@ -102,7 +102,7 @@ export default function WebsiteDevelopment() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                    src="/Website Design/Introduction.jpg" 
                                     alt="Our Story - Website Development Team" 
                                     width={600}
                                     height={550}
@@ -258,14 +258,14 @@ export default function WebsiteDevelopment() {
                                             <Image 
                                                 src={
                                                     index === 0 
-                                                        ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/Website Design/Process step 1.jpg"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/Website Design/process step 2.jpg"
                                                         : index === 2
-                                                        ? "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/Website Design/Process step 3.jpg"
                                                         : index === 3
-                                                        ? "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/Website Design/process step 4-12.jpg"
+                                                        : "/Website Design/process step 5.jpg"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -299,15 +299,15 @@ export default function WebsiteDevelopment() {
                                 ))}
                             </div>
                         </div>
-                        <div className="relative">
-                            <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
-                                <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&crop=center" 
-                                    alt="Our Team" 
-                                    width={800}
-                                    height={450}
-                                    className="absolute inset-0 w-full h-full object-cover"
-                                />
+                                <div className="relative">
+                                    <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
+                                        <Image 
+                                            src="/Website Design/why choose KI.jpg" 
+                                            alt="Our Team" 
+                                            width={800}
+                                            height={450}
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                        />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="relative z-10 text-center text-white">
                                     <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">

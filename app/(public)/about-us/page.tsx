@@ -258,7 +258,7 @@ export default function AboutUs() {
                         <div className="relative">
                             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=600&h=800&fit=crop&crop=center" 
+                                    src="/founder.png"
                                     alt="Pooja Jain - Founder" 
                                     width={600}
                                     height={700}
@@ -283,19 +283,7 @@ export default function AboutUs() {
                                     Approachable, visionary, and committed to excellence, Pooja continues to shape Kusum Innovations into a trusted creative partner for brands across industries—transforming ideas into experiences that captivate, connect, and create lasting impressions.
                                 </p>
                             </div>
-
-                            {/* Founder Stats */}
-                            <div className="grid grid-cols-2 gap-4 mt-8">
-                                <div className="text-center p-4 bg-gradient-to-r from-[#B944EA]/10 to-[#A03BD6]/10 rounded-lg">
-                                    <div className="text-2xl font-black text-[#B944EA] mb-1">13+</div>
-                                    <div className="text-sm text-gray-600">Years Experience</div>
-                                </div>
-                                <div className="text-center p-4 bg-gradient-to-r from-[#00B7FF]/10 to-[#0099CC]/10 rounded-lg">
-                                    <div className="text-2xl font-black text-[#00B7FF] mb-1">MBA</div>
-                                    <div className="text-sm text-gray-600">Marketing</div>
-                                </div>
-                            </div>
-
+                           
                             {/* LinkedIn Link */}
                             <div className="mt-6">
                                 <Link 

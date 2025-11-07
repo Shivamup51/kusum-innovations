@@ -5,37 +5,37 @@ export const websiteTypes = [
         title: "Custom Business Websites",
         description: "We design and develop fully customized websites aligned with your brand, audience, and goals. From corporate websites to personal portfolios, our solutions focus on clean design, intuitive navigation, and scalability. Every website is built to establish credibility, engage users, and deliver measurable business impact—ensuring your digital presence becomes a powerful growth engine.",
         icon: "🌐",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/Website Design/Custom.jpg"
     },
     {
         title: "Ecommerce Websites",
         description: "Our ecommerce development services empower you to sell smarter and scale faster. From Shopify and WooCommerce to Magento and custom platforms, we create user-friendly shopping experiences with secure payment gateways, catalogue management, and seamless checkout. Designed for performance and conversions, our ecommerce websites boost sales, strengthen customer loyalty, and deliver exceptional ROI across devices.",
         icon: "🛒",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
+        image: "/Website Design/ecommerce.jpg"
     },
     {
         title: "WordPress & CMS Development",
         description: "Manage your website with ease through user-friendly content management systems. As a trusted WordPress and CMS development company, we deliver responsive, SEO-friendly websites optimized for speed and functionality. From blogs to corporate portals, our CMS solutions allow easy updates, scalability, and long-term flexibility—empowering businesses to stay agile in a competitive digital landscape.",
         icon: "📝",
-        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
+        image: "/Website Design/CMS.jpg"
     },
     {
         title: "Web Portals & Dashboards",
         description: "We build powerful web portals and dashboards tailored to industries like education, finance, retail, and healthcare. With secure logins, advanced integrations, and interactive data visualization, our portals simplify workflows and improve collaboration. Each solution is designed to deliver seamless user experiences while enabling organizations to make informed, data-driven decisions with confidence and efficiency.",
         icon: "📊",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+        image: "/Website Design/Web Portals.jpg"
     },
     {
         title: "UI/UX & Responsive Design",
         description: "Our UI/UX design services ensure your website looks stunning and functions flawlessly across devices. From wireframes and prototypes to final interfaces, we focus on intuitive navigation and engaging layouts. Every design is mobile-first, responsive, and conversion-driven—enhancing user satisfaction, boosting engagement, and turning casual visitors into loyal customers through impactful digital experiences.",
         icon: "🎨",
-        image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop&crop=center"
+        image: "/Website Design/UI & UX.jpg"
     },
     {
         title: "Website Maintenance & Optimization",
         description: "We ensure your website stays secure, fast, and up to date with our maintenance and optimization services. From fixing bugs and updating plugins to enhancing performance and SEO readiness, we handle it all. Our proactive monitoring ensures websites evolve with user needs and industry standards—delivering long-term stability, growth, and consistent online performance.",
         icon: "⚡",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/Website Design/Website Maintenance.jpg"
     }
 ]
 
