@@ -74,7 +74,7 @@ export default function PaidAdvertising() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                        src="/PAID ADVERTISING/Hero section.jpg" 
                                         alt="Paid Advertising Services" 
                                         width={600}
                                         height={450}
@@ -102,7 +102,7 @@ export default function PaidAdvertising() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                    src="/PAID ADVERTISING/introduction.jpg" 
                                     alt="Our Story - Paid Advertising Team" 
                                     width={600}
                                     height={550}
@@ -255,10 +255,10 @@ export default function PaidAdvertising() {
                                             <Image 
                                                 src={
                                                     index === 0 
-                                                        ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/PAID ADVERTISING/step 1.jpg"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/PAID ADVERTISING/step 2.jpg"
+                                                        : "/PAID ADVERTISING/step 3.jpg"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -295,7 +295,7 @@ export default function PaidAdvertising() {
                         <div className="relative">
                             <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&crop=center" 
+                                    src="/PAID ADVERTISING/why choose us.jpg" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}

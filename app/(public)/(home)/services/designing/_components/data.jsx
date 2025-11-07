@@ -5,37 +5,37 @@ export const designTypes = [
         title: "Logo Design",
         description: "Make an unforgettable first impression with our custom logo design services. From sleek, modern logos for startups to timeless marks with detailed brand guidelines, we ensure your identity is sharp, versatile, and consistent. Every logo is crafted to embody your brand's essence—memorable, scalable, and professional across all platforms. Build recognition with a design that lasts.",
         icon: "🎨",
-        image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop&crop=center"
+        image: "/Designing/Logo Design.jpg"
     },
     {
         title: "Marketing Collaterals",
         description: "Transform engagement with striking brochures, flyers, catalogues, and corporate profiles. Whether it's a tri-fold brochure, promotional flyer, or a detailed company catalogue, we design content-rich, visually compelling materials that resonate with your audience. Every collateral piece is tailored to communicate value, drive action, and strengthen your brand presence across events, client meetings, and customer touchpoints.",
         icon: "📄",
-        image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop&crop=center"
+        image: "/Designing/Marketing collaterals.jpg"
     },
     {
         title: "Brand Communication",
         description: "Define your brand with powerful communication assets. From comprehensive brand guidelines, corporate identity kits, and packaging design to impactful investor decks, we create cohesive systems that elevate perception. Every element—colours, typography, tone, and visual style—is strategically crafted to align with your vision, ensuring your brand speaks consistently and leaves a lasting impression in every interaction.",
         icon: "💼",
-        image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop&crop=center"
+        image: "/Designing/Brand Communication.jpg"
     },
     {
         title: "Print & Offline",
         description: "Command attention offline with premium designs for posters, hoardings, event branding, calendars, diaries, and more. Whether for exhibitions, conferences, or retail promotions, we deliver bold, eye-catching print solutions that amplify visibility. Every detail, from backdrops to giveaways, is designed to be functional yet memorable, ensuring your brand presence stands tall in real-world spaces.",
         icon: "🖨️",
-        image: "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800&h=600&fit=crop&crop=center"
+        image: "/Designing/print design.jpg"
     },
     {
         title: "Digital Assets",
         description: "Maximize digital impact with social media creatives, infographics, digital ads, and email templates tailored for engagement. We design scroll-stopping posts, branded stories, campaign visuals, and e-books that communicate with clarity and creativity. Each asset blends design precision with strategic storytelling—helping you connect, influence, and convert across platforms while building a consistent, recognizable online identity.",
         icon: "📱",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/Designing/digital assets.jpg"
     },
     {
         title: "UI/UX & Creative Add-ons",
         description: "Elevate your digital presence with modern UI/UX design for websites, apps, and interactive presentations. Complement with creative add-ons like illustrations, custom icons, 3D mockups, motion graphics, and environmental branding. These value-packed extras add uniqueness, engagement, and versatility—ensuring your brand stands apart not just visually, but experientially, across physical, digital, and immersive customer touchpoints.",
         icon: "💻",
-        image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop&crop=center"
+        image: "/Designing/UI UX Designing.jpg"
     }
 ]
 

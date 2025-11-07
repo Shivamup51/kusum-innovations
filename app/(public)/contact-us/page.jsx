@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageSquare, Users, Award, Facebook, Instagram, Linkedin, Youtube, MessageCircle, X } from "lucide-react"
 import Navbar from "@/components/ui/navbar"
 
@@ -109,7 +110,7 @@ export default function ContactUs() {
             name: "Twitter (x)",
             url: "https://x.com/kusuminnovation/",
             icon: X,
-            color: "text-blue-400"
+            color: "text-gray-900"
         },
         {
             name: "YouTube",
@@ -132,19 +133,30 @@ export default function ContactUs() {
             {/* Hero Section */}
             <section className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center">
-                        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 mt-12">
-                            Let&apos;s Create Something 
-                            <span className="bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent"> Extraordinary</span> Together
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                            At Kusum Innovations, we believe every great collaboration starts with a conversation. Whether you&apos;re looking for powerful video production, creative design, strategic marketing, or digital growth solutions — our team is here to listen, guide, and bring your vision to life.
-                        </p>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We&apos;re not just service providers — we&apos;re partners invested in your success. Let&apos;s discuss your goals, challenges, and opportunities, and build strategies that drive real results.
-                        </p>
-                        
-                        
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 mt-12">
+                                Let&apos;s Create Something 
+                                <span className="bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent"> Extraordinary</span> Together
+                            </h1>
+                            <p className="text-xl text-gray-600 max-w-3xl mb-4">
+                                At Kusum Innovations, we believe every great collaboration starts with a conversation. Whether you&apos;re looking for powerful video production, creative design, strategic marketing, or digital growth solutions — our team is here to listen, guide, and bring your vision to life.
+                            </p>
+                            <p className="text-lg text-gray-600 max-w-3xl">
+                                We&apos;re not just service providers — we&apos;re partners invested in your success. Let&apos;s discuss your goals, challenges, and opportunities, and build strategies that drive real results.
+                            </p>
+                        </div>
+                        <div className="relative">
+                            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+                                <Image 
+                                    src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=600&fit=crop&crop=center" 
+                                    alt="Contact Us" 
+                                    width={800}
+                                    height={600}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -307,13 +319,21 @@ export default function ContactUs() {
                                             <div className={`w-12 h-12 bg-gradient-to-r from-[#B944EA] to-[#00B7FF] rounded-xl flex items-center justify-center flex-shrink-0`}>
                                                 <info.icon className="h-6 w-6 text-white" />
                                             </div>
-                                            <div>
+                                            <div className="flex-1">
                                                 <h4 className="font-semibold text-gray-900 mb-1">{info.title}</h4>
-                                                <div className="space-y-1">
-                                                    {info.details.map((detail, i) => (
-                                                        <p key={i} className="text-gray-600">{detail}</p>
-                                                    ))}
-                                                </div>
+                                                {info.title === "Phone" || info.title === "Timing" ? (
+                                                    <div className="flex flex-wrap gap-2">
+                                                        {info.details.map((detail, i) => (
+                                                            <p key={i} className="text-gray-600">{detail}</p>
+                                                        ))}
+                                                    </div>
+                                                ) : (
+                                                    <div className="space-y-1">
+                                                        {info.details.map((detail, i) => (
+                                                            <p key={i} className="text-gray-600">{detail}</p>
+                                                        ))}
+                                                    </div>
+                                                )}
                                             </div>
                                         </div>
                                     ))}

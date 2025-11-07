@@ -5,37 +5,37 @@ export const seoTypes = [
         title: "On-Page SEO",
         description: "We optimize every on-page element—meta tags, headings, images, content, and internal linking—to align with search engine algorithms and user intent. This ensures your site ranks higher, loads faster, and delivers a seamless user experience. Our on-page SEO strategies strengthen relevance and authority, creating a solid foundation for sustained organic traffic and engagement.",
         icon: "📄",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/SEO/On page SEO.jpg"
     },
     {
         title: "Technical SEO",
         description: "A technically sound website is the backbone of strong rankings. We enhance site speed, mobile responsiveness, crawlability, and indexation while resolving technical errors. From improving site architecture to structured data implementation, our technical SEO services ensure your website is fully optimized for search engines, helping users and bots easily navigate and engage with content.",
         icon: "⚙️",
-        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
+        image: "/SEO/technical SEO.jpg"
     },
     {
         title: "Off-Page SEO",
         description: "Boost your online authority and reputation with strategic off-page SEO. We build high-quality backlinks, optimize local listings, and leverage digital PR and social signals to strengthen credibility. Our off-page SEO services focus on sustainable link-building strategies that improve your site's trustworthiness and visibility, ensuring long-term ranking improvements and stronger engagement across multiple digital touchpoints.",
         icon: "🔗",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+        image: "/SEO/Off page SEO.jpg"
     },
     {
         title: "Content Optimization & Creation",
         description: "Content fuels SEO success. We craft and optimize keyword-rich, engaging, and value-driven content that resonates with audiences and search engines alike. From blogs and landing pages to product descriptions, our content strategies enhance relevance, authority, and shareability. Every piece is designed to capture attention, boost rankings, and drive meaningful organic traffic to your site.",
         icon: "✍️",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+        image: "/SEO/Content Optimisation.jpg"
     },
     {
         title: "Local SEO",
         description: "We help local businesses rank higher for location-based searches in Delhi, Noida, Gurgaon, and beyond. Our local SEO strategies include Google Business Profile optimization, geo-targeted content, and local citations that drive visibility in 'near me' searches. By connecting you with customers in your area, we transform local intent into measurable footfalls, leads, and conversions.",
         icon: "📍",
-        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&crop=center"
+        image: "/SEO/Local SEO.jpg"
     },
     {
         title: "SEO Analytics & Reporting",
         description: "We believe in transparency and measurable success. With detailed SEO analytics and reporting, we track keyword rankings, organic traffic, engagement, and conversions. Regular reports keep you informed and empowered, while data-driven insights allow us to refine strategies. Our goal is not just visibility but consistent ROI that helps your business grow online sustainably.",
         icon: "📊",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+        image: "/SEO/SEO Analytics.jpg"
     }
 ]
 

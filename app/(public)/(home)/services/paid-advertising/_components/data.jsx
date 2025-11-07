@@ -5,37 +5,37 @@ export const paidAdvertisingTypes = [
         title: "Google Ads Management",
         description: "From search engine marketing to remarketing, we design campaigns that target high-intent audiences actively searching for your services. Our certified team uses smart bidding, keyword mapping, and persuasive ad copy to boost visibility and conversions. With continuous optimization and clear reporting, Google Ads become a powerful tool to drive quality traffic and measurable growth.",
         icon: "🔍",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/PAID ADVERTISING/google ads.jpg"
     },
     {
         title: "Meta Ads (Facebook & Instagram)",
         description: "We create ads that stop the scroll and spark action. From reels and stories to carousel ads, we build campaigns that connect with your audience on Facebook and Instagram. Using advanced targeting, engaging visuals, and tested ad formats, we boost brand awareness, generate leads, and drive sales while maximizing every rupee spent.",
         icon: "📱",
-        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop&crop=center"
+        image: "/PAID ADVERTISING/meta ads.jpg"
     },
     {
         title: "LinkedIn Ads for B2B",
         description: "Reach decision-makers and industry leaders with precision. Our LinkedIn ad campaigns are designed for B2B companies looking to generate leads, build authority, and promote services or webinars. By blending strategic targeting with professional storytelling, we help businesses strengthen their presence, attract high-value clients, and stand out in competitive markets where credibility drives conversion.",
         icon: "💼",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+        image: "/PAID ADVERTISING/Linkedin ads.jpg"
     },
     {
         title: "WhatsApp Ads & Marketing",
         description: "Engage your customers instantly with personalized WhatsApp Ads. From promotions to interactive lead nurturing, we design campaigns that bring your brand directly into conversations. With engaging creatives, conversational messaging, and targeted delivery, WhatsApp Ads help build stronger customer connections, drive higher response rates, and create a personalized brand experience that feels direct and authentic.",
         icon: "💬",
-        image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&h=600&fit=crop&crop=center"
+        image: "/PAID ADVERTISING/whatsapp ads.jpg"
     },
     {
         title: "YouTube Ads Management",
         description: "Tap into the world's largest video platform with campaigns that captivate. We design YouTube Ads that highlight your story, product, or brand in impactful ways. By combining precise targeting with compelling video storytelling, we help businesses increase recall, drive engagement, and bring meaningful traffic to their websites or stores across devices.",
         icon: "📺",
-        image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&crop=center"
+        image: "/PAID ADVERTISING/youtube ads.jpg"
     },
     {
         title: "Twitter Ads",
         description: "Be part of the conversation with targeted Twitter campaigns. From promoted tweets to engaging video ads, we help brands join real-time discussions, expand reach, and spark meaningful interactions. Our strategies focus on trend-based engagement and dynamic content delivery that ensures your brand stays visible, relevant, and connected with audiences in fast-moving digital spaces.",
         icon: "🐦",
-        image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&h=600&fit=crop&crop=center"
+        image: "/PAID ADVERTISING/twitter ads.jpg"
     }
 ]
 

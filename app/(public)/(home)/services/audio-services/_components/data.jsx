@@ -5,25 +5,25 @@ export const audioTypes = [
         title: "Corporate Anthems & Jingles",
         description: "Bring your brand to life with custom anthems and jingles. From energizing corporate songs to catchy advertising tunes, we compose music that reflects your values, inspires your teams, and builds recognition. Every anthem and jingle are crafted with precision to create emotional resonance, elevate brand recall, and leave a lasting impression across campaigns and events.",
         icon: "🎵",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center"
+        image: "/AUDIO/Corporate anthems.jpg"
     },
     {
         title: "Voice Over Services (Multilingual)",
         description: "Give your brand a global voice with professional voice overs in 30+ languages. Featuring native speakers and experienced artists, we deliver authentic, studio-grade recordings that match your tone and message. From commercials and explainer videos to IVRs and e-learning modules, our voice over solutions ensure consistency, clarity, and cultural accuracy—making your communication impactful worldwide.",
         icon: "🎤",
-        image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop&crop=center"
+        image: "/AUDIO/Untitled-2-04.jpg"
     },
     {
         title: "Dubbing & Language Services",
         description: "Seamlessly adapt your content for global markets with professional dubbing. Our multilingual dubbing services ensure your message retains its essence while reaching audiences across cultures. With native artists, authentic delivery, and precise lip-sync, we create natural, engaging outputs for commercials, videos, and corporate content—bridging language gaps without losing the power of your original message.",
         icon: "🎬",
-        image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&crop=center"
+        image: "/AUDIO/Dubbing and language services.jpg"
     },
     {
         title: "Translation & Transcription",
         description: "Break barriers with accurate translation and transcription services. We help brands localize audio content for marketing, training, and outreach with precision and cultural relevance. From transcribing interviews to translating voice overs, our end-to-end solutions ensure message integrity across formats and languages—allowing your brand to communicate clearly, consistently, and effectively with diverse global audiences.",
         icon: "📝",
-        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
+        image: "/AUDIO/Translations and Transcriptions.jpg"
     }
 ]
 

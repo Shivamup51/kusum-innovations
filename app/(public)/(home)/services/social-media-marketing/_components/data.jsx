@@ -5,31 +5,31 @@ export const socialMediaTypes = [
         title: "Facebook Marketing",
         description: "Reach and engage audiences with targeted ad campaigns, optimized business pages, and impactful content strategies. From creative ad design to audience targeting and community management, we help brands build visibility, generate leads, and nurture long-term engagement on the world's most powerful social platform.",
         icon: "📘",
-        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop&crop=center"
+        image: "/SMM/facebook.jpg"
     },
     {
         title: "Instagram Marketing",
         description: "Transform your brand presence with thumb-stopping visuals, reels, and story ads that convert. We craft tailored Instagram strategies—from content calendars and hashtag research to influencer collaborations and ad campaigns—ensuring your brand reflects authenticity, drives engagement, and delivers measurable ROI in a visually driven ecosystem.",
         icon: "📷",
-        image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&h=600&fit=crop&crop=center"
+        image: "/SMM/instagram.jpg"
     },
     {
         title: "LinkedIn Marketing",
         description: "Build authority, expand your professional network, and generate quality B2B leads with LinkedIn-focused strategies. We optimize profiles, create thought leadership content, manage campaigns, and run targeted outreach to establish credibility and connect with decision-makers—positioning your brand as a leader in its industry.",
         icon: "💼",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+        image: "/SMM/Linkedin.jpg"
     },
     {
         title: "Twitter (X) Marketing",
         description: "Stay relevant in real-time with dynamic Twitter strategies. We manage content calendars, trending hashtags, and brand conversations while running targeted ad campaigns. Our approach keeps your brand visible, builds influence, and sparks meaningful conversations that amplify reach and drive engagement across fast-moving digital communities.",
         icon: "🐦",
-        image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&h=600&fit=crop&crop=center"
+        image: "/SMM/Twitter.jpg"
     },
     {
         title: "YouTube Marketing",
         description: "Harness the power of video with tailored YouTube marketing strategies. From channel optimization and content planning to ad campaigns and SEO-driven video promotion, we help brands maximize visibility and engagement. Whether it's tutorials, product showcases, or storytelling content, our approach ensures your videos reach the right audience and deliver lasting impact.",
         icon: "📺",
-        image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&crop=center"
+        image: "/SMM/Youtube.jpg"
     }
 ]
 

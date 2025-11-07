@@ -74,7 +74,7 @@ export default function Photography() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop&crop=center" 
+                                        src="/PHOTOGRAPHY/Hero Section.jpg" 
                                         alt="Photography Services" 
                                         width={600}
                                         height={450}
@@ -102,7 +102,7 @@ export default function Photography() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop&crop=center" 
+                                    src="/PHOTOGRAPHY/Introduction.jpg" 
                                     alt="Our Story - Photography Team" 
                                     width={600}
                                     height={550}
@@ -255,10 +255,10 @@ export default function Photography() {
                                             <Image 
                                                 src={
                                                     index === 0 
-                                                        ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/PHOTOGRAPHY/Process 1.jpg"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/PHOTOGRAPHY/Process 2.jpg"
+                                                        : "/PHOTOGRAPHY/process 3.jpg"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -295,7 +295,7 @@ export default function Photography() {
                         <div className="relative">
                             <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&h=450&fit=crop&crop=center" 
+                                    src="/PHOTOGRAPHY/Why choose us.jpg" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}

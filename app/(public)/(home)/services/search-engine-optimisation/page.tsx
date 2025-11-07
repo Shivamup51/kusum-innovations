@@ -74,7 +74,7 @@ export default function SEO() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                        src="/SEO/Hero Section.jpg" 
                                         alt="SEO Services" 
                                         width={600}
                                         height={450}
@@ -102,7 +102,7 @@ export default function SEO() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&crop=center" 
+                                    src="/SEO/Introduction.jpg" 
                                     alt="Our Story - SEO Services Team" 
                                     width={600}
                                     height={550}
@@ -255,10 +255,10 @@ export default function SEO() {
                                             <Image 
                                                 src={
                                                     index === 0 
-                                                        ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/SEO/process 1.jpg"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/SEO/process 2.jpg"
+                                                        : "/SEO/process 3.jpg"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -295,7 +295,7 @@ export default function SEO() {
                         <div className="relative">
                             <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&crop=center" 
+                                    src="/SEO/why choose us-12.jpg" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}

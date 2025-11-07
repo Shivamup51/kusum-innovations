@@ -5,49 +5,49 @@ export const photographyTypes = [
         title: "Creative Photoshoot",
         description: "Turn ideas into art with our creative photoshoots in Delhi. Whether it's artistic, conceptual, or personal branding photography, our team transforms imagination into striking compositions. From fashion to lifestyle shoots, we tailor every session to reflect individuality and style—ensuring no two shoots are ever the same. Every creative frame becomes a bold statement that resonates.",
         icon: "🎨",
-        image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Creative Photography.jpg"
     },
     {
         title: "Food Photography",
         description: "Showcase your culinary creations at their very best. Our food photography services in Delhi-NCR are ideal for menus, advertising campaigns, and social media promotions. From restaurant shoots to styled food visuals, we bring every flavour to life. With professional stylists and advanced lighting setups, we make dishes irresistible across print and digital platforms, inspiring appetites and driving engagement.",
         icon: "🍽️",
-        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Food Photography.jpg"
     },
     {
         title: "Ecommerce Photography",
         description: "Boost online sales with high-quality ecommerce photography. From Amazon product photography to optimized store listings, we deliver crisp, professional visuals that build trust. Clean backgrounds, consistency, and high resolution make your products stand out and drive conversions. Tailored for online retailers and brands, our ecommerce shoots ensure your catalogue looks premium, polished, and ready to perform in digital marketplaces.",
         icon: "🛒",
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Ecommerce Photography.jpg"
     },
     {
         title: "360° Photography",
         description: "Engage audiences with immersive 360-degree photography. Perfect for showcasing products, spaces, and virtual tours, our interactive visuals provide dynamic perspectives and increase engagement. Whether it's retail, real estate, or ecommerce, we deliver 360° experiences that enhance customer confidence, extend interaction time, and bring your offerings to life in a more impactful, innovative, and interactive way.",
         icon: "🔄",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/360 degree photography.jpg"
     },
     {
         title: "Interior Photography",
         description: "Highlight your designs with expert interior photography. Perfect for architects, realtors, and designers, we capture the essence of every space with detail, depth, and ambiance. Using natural light and wide-angle expertise, our images emphasize flow, structure, and textures—bringing interiors to life in a visually stunning way that resonates with portfolios, presentations, and marketing campaigns.",
         icon: "🏠",
-        image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Interior Photography.jpg"
     },
     {
         title: "Exterior Photography",
         description: "Showcase properties in their full glory with our exterior photography services in Delhi-NCR. From architectural projects to real estate exteriors, we capture buildings in their best light and angle. Shooting during golden hours with advanced lens work, we enhance symmetry, structure, and appeal—making every shot portfolio-ready and perfect for promotions, property listings, and architectural showcases.",
         icon: "🏢",
-        image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Exterior Photography.jpg"
     },
     {
         title: "Product Photography",
         description: "Bring your products to life with high-resolution product photography. From advertising campaigns and catalogues to digital ads, our visuals ensure your products shine. Whether through lifestyle setups or minimalist studio shots, we align with your brand aesthetic. Our product photography is sharp, adaptable, and high-quality, crafted to stand out and work flawlessly in both print and digital formats.",
         icon: "📦",
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Product Photography.jpg"
     },
     {
         title: "Corporate Photoshoots",
         description: "Project professionalism with our corporate photography services. From executive portraits and professional headshots to corporate events and office culture shoots, we craft imagery that strengthens brand credibility. Whether it is leadership profiles, workplace storytelling, or brand documentation, our photography makes businesses look polished, approachable, and credible helping build trust with clients, partners, and employees alike.",
         icon: "💼",
-        image: "https://images.unsplash.com/photo-1560472355-109703aa3edc?w=800&h=600&fit=crop&crop=center"
+        image: "/PHOTOGRAPHY/Corporate.jpg"
     }
 ]
 

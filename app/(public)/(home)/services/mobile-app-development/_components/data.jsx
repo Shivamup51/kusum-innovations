@@ -5,49 +5,49 @@ export const mobileAppTypes = [
         title: "Android App Development",
         description: "We create powerful, scalable, and reliable Android apps that reach millions of users. Our expert developers focus on functionality, speed, and intuitive user experience, ensuring apps perform seamlessly across devices. Recognized as a trusted Android application development company in Delhi-NCR, we deliver tailored solutions that combine creativity, strategy, and technology for measurable business growth.",
         icon: "🤖",
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/Android Development.jpg"
     },
     {
         title: "iOS App Development",
         description: "Our iOS app development services deliver sleek, secure, and high-performing applications tailored for Apple users. We design responsive, intuitive interfaces that meet Apple's strict performance and design standards. From concept to deployment, every app is crafted with precision and innovation, making us a reliable iPhone app development company that helps businesses engage, retain, and delight audiences effectively.",
         icon: "🍎",
-        image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/ios app development.jpg"
     },
     {
         title: "Cross-Platform App Solutions",
         description: "Expand your reach cost-effectively with high-performing apps for both Android and iOS. Using cutting-edge frameworks like React Native and Flutter, we build scalable cross-platform applications without sacrificing speed, design quality, or user experience. Our solutions maximize impact while reducing costs, enabling businesses to engage diverse audiences seamlessly through a single, cohesive, and future-ready mobile platform.",
         icon: "🔄",
-        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/Cross platform app.jpg"
     },
     {
         title: "Custom Mobile App Design & Development",
         description: "Every business is unique, and so are our mobile app solutions. We design and develop custom applications from the ground up, aligning features, workflows, and user journeys with business goals. With a focus on intuitive design, strong functionality, and performance, our apps solve real challenges while delivering engaging experiences tailored to each client's industry and audience.",
         icon: "🎨",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/Custom app development.jpg"
     },
     {
         title: "Enterprise & Productivity Apps",
         description: "Boost efficiency with enterprise mobility solutions, internal communication platforms, and productivity apps. Designed for businesses of all sizes, these apps streamline workflows, enhance collaboration, and empower employees. Whether it's project management, CRM, or internal operations, we build secure, scalable solutions that optimize business performance and drive measurable growth across industries.",
         icon: "💼",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/Enterprise App.jpg"
     },
     {
         title: "Ecommerce & On-Demand Apps",
         description: "We create engaging ecommerce apps, marketplaces, and on-demand platforms for food delivery, ridesharing, and service booking. With secure payments, catalogue management, and real-time updates, our solutions deliver convenience to customers while boosting revenue. Designed for scalability and user delight, these apps provide seamless shopping and service experiences tailored to your business model.",
         icon: "🛒",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/ecommerce app.jpg"
     },
     {
         title: "Education, Healthcare & Fitness Apps",
         description: "From interactive learning platforms and virtual classrooms to telemedicine, appointment booking, and fitness tracking apps, we develop solutions that improve engagement and accessibility. Secure, user-friendly, and data-driven, these apps empower industries to connect with audiences meaningfully enhancing learning, promoting wellness, and simplifying healthcare experiences for students, patients, professionals, and fitness enthusiasts alike.",
         icon: "🏥",
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/Healthcare app.jpg"
     },
     {
         title: "Fintech, Gaming & Media Apps",
         description: "We design robust apps for financial services, entertainment, and media. From secure payment gateways and digital wallets to streaming, gaming, and content platforms, our solutions balance performance with compliance and creativity. Whether boosting engagement or enabling transactions, we ensure these apps deliver seamless experiences that keep users entertained, informed, and connected globally.",
         icon: "🎮",
-        image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&h=600&fit=crop&crop=center"
+        image: "/App Development/Gaming App.jpg"
     }
 ]
 
