@@ -94,7 +94,7 @@ export default function AboutUs() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=450&fit=crop&crop=center" 
+                                        src="/HERO SECTION.jpg"
                                         alt="About Kusum Innovations" 
                                         width={600}
                                         height={450}
@@ -143,7 +143,7 @@ export default function AboutUs() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=450&fit=crop&crop=center" 
+                                    src="/ABOUT US .jpg" 
                                     alt="About Kusum Innovations" 
                                     width={600}
                                     height={450}
@@ -257,7 +257,7 @@ export default function AboutUs() {
                         <div className="relative">
                             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="/founder.png"
+                                    src="/founder.jpg"
                                     alt="Pooja Jain - Founder" 
                                     width={600}
                                     height={700}
