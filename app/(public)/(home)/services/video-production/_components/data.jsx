@@ -5,73 +5,73 @@ export const videoTypes = [
         title: "TV Commercials",
         description: "Stand out on screen with powerful TV commercial production that grabs attention. We deliver cinematic visuals and compelling scripts to make your brand unforgettable. From concept to execution, our commercials are designed to connect emotionally, engage audiences instantly, and leave a lasting impact. With a blend of creativity and strategy, we make sure your brand shines on every screen.",
         icon: "📺",
-        image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/TV Commercials.jpg"
     },
     {
         title: "Brand Films",
         description: "Showcase your identity with creative brand film production. From startups to enterprises, we craft branded videos that build trust and inspire engagement. Our team focuses on storytelling that reflects your core values, mission, and vision—ensuring your audience connects with your brand on a deeper level. A brand film is more than content; it's your identity brought to life.",
         icon: "🎬",
-        image: "https://images.unsplash.com/photo-1489599804151-0e4d0b0b5b5b?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/brand films.jpg"
     },
     {
         title: "Corporate Films",
         description: "Professional corporate video production for company profiles, training videos, and internal communication—designed to reflect your brand's values and vision. We help businesses communicate with impact, simplify complex ideas, and highlight organizational achievements. Whether it's showcasing culture, leadership, or milestones, our corporate films deliver credibility and professionalism while strengthening brand reputation among stakeholders and employees alike.",
         icon: "🏢",
-        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/corporate films.jpg"
     },
     {
         title: "Documentary Films",
         description: "As a leading documentary film production company, we create visually rich, impactful narratives for NGOs, CSR projects, and educational purposes. Our documentaries are crafted with research-driven storytelling, cinematic cinematography, and emotional depth. Whether raising awareness, driving social change, or preserving history, we transform real stories into compelling visuals that resonate deeply and inspire meaningful action.",
         icon: "📸",
-        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/documentary.jpg"
     },
     {
         title: "Music Videos",
         description: "Our music video production services deliver cinematic storytelling for artists and bands, syncing visuals perfectly with your sound and style. From concept ideation to direction and post-production, we ensure your artistry shines through every frame. With innovative visuals, powerful narratives, and striking creativity, we craft music videos that amplify your reach, engage fans, and elevate your artistic presence.",
         icon: "🎵",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/music videos.jpg"
     },
     {
         title: "Short Films",
         description: "From festival entries to branded storytelling, we produce creative short films that resonate with your audience and leave a lasting impression. Our short film production blends storytelling brilliance, cinematic techniques, and emotional depth. Whether your goal is entertainment, awareness, or branding, we ensure your story is told authentically, connecting powerfully with audiences and standing out on every platform.",
         icon: "🎭",
-        image: "https://images.unsplash.com/photo-1489599804151-0e4d0b0b5b5b?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/Short films.jpg"
     },
     {
         title: "Product Video Shoots",
         description: "Highlight your products with high-quality product video production that drives sales and elevates your brand's digital presence. We showcase features, benefits, and functionality with stunning visuals and creative storytelling. From lifestyle-driven shoots to studio-based demonstrations, our videos help customers understand and connect with your product better—boosting confidence, increasing conversions, and setting your brand apart in competitive markets.",
         icon: "📦",
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/product videos.jpg"
     },
     {
         title: "Promotional & Reels Videos",
         description: "Create buzz with engaging promotional videos and Instagram reels that capture attention and boost brand visibility on social media. Designed for high impact in short formats, our videos combine creativity, trends, and storytelling. Whether launching products, promoting campaigns, or building online presence, we deliver content that is scroll-stopping, share-worthy, and designed to maximize reach and engagement.",
         icon: "📱",
-        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/promotional reel videos.jpg"
     },
     {
         title: "Testimonial Videos",
         description: "Build trust with authentic testimonial video production, showcasing real customer experiences to strengthen your credibility and brand reputation. Genuine stories told by your clients create emotional connections and influence decision-making. We craft testimonials that highlight satisfaction, trust, and results—helping prospects see real-world value in your brand. Authentic voices deliver the strongest marketing message: proof that your brand delivers.",
         icon: "💬",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/testimonials shoot.jpg"
     },
     {
         title: "Event Coverage",
         description: "Comprehensive event video production for conferences, launches, and celebrations—capturing every key moment with precision and creativity. Our team documents the energy, highlights, and emotions of your event with cinematic style. From keynote addresses to audience interactions, we ensure your event lives beyond the venue—providing valuable content for promotions, marketing, and long-term brand engagement.",
         icon: "🎉",
-        image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/event coverages.jpg"
     },
     {
         title: "Interview Videos",
         description: "Professional interview video production for leaders, influencers, or brand representatives—delivering authentic and engaging on-camera conversations. We focus on clarity, storytelling, and audience connection, ensuring every message feels genuine and relatable. With expert direction, high-quality production, and seamless editing, our interviews become powerful tools for thought leadership, brand authority, and deeper audience trust.",
         icon: "🎤",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/interview videos.jpg"
     },
     {
         title: "Training & Educational Videos",
         description: "Deliver impactful training and educational videos that enhance learning, streamline onboarding, and empower your workforce effectively. Our productions combine engaging visuals, step-by-step instructions, and clear communication to simplify complex concepts. Designed for maximum retention, these videos reduce training costs, increase efficiency, and provide consistent learning experiences—making them an essential tool for modern businesses and institutions.",
         icon: "📚",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center"
+        image: "/VIDEO PRODUCTION/educational videos.jpg"
     }
 ]
 

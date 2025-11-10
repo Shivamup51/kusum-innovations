@@ -7,7 +7,7 @@ import { audioTypes, faqs, processSteps, whyChooseUs } from "./_components/data"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Volume2, ArrowRight, CheckCircle, Star } from "lucide-react"
+import { Volume2, ArrowRight, CheckCircle } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function AudioServices() {
@@ -100,7 +100,7 @@ export default function AudioServices() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Single Image */}
                         <div className="relative">
-                            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+                            <div className="aspect-[3/2] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
                                     src="/AUDIO/Introduction.jpg" 
                                     alt="Our Story - Audio Services Team" 
@@ -114,7 +114,7 @@ export default function AudioServices() {
                         {/* Content */}
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                                Introduction
+                                Sound That Speaks Emotion
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
@@ -144,12 +144,12 @@ export default function AudioServices() {
 
                     {/* Service Tabs */}
                     <div className="mb-12">
-                        <div className="flex flex-wrap justify-center gap-4">
+                        <div className="flex flex-nowrap lg:flex-wrap overflow-x-auto lg:overflow-x-visible justify-start lg:justify-center gap-4 px-4 lg:px-0 pb-2 service-tabs-scroll">
                             {audioTypes.map((service, index) => (
                                 <button
                                     key={index}
                                     onClick={() => setActiveService(index)}
-                                    className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                                    className={`px-6 py-3 rounded-full font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                                         activeService === index
                                             ? 'bg-[#B944EA] text-white shadow-lg hover:bg-[#A03BD6]'
                                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -293,21 +293,14 @@ export default function AudioServices() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="aspect-video bg-gradient-to-br from-[#B944EA]/10 to-[#00B7FF]/10 rounded-3xl flex items-center justify-center relative overflow-hidden">
+                            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
                                     src="/AUDIO/why choose us.jpg" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}
-                                    className="absolute inset-0 w-full h-full object-cover"
+                                    className="w-full h-full object-cover"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div className="relative z-10 text-center text-white">
-                                    <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
-                                        <Star className="h-10 w-10 text-white" />
-                                    </div>
-                                    <p className="text-xl font-medium">Your Sound, Our Passion</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -357,12 +350,6 @@ export default function AudioServices() {
                             Start Your Project
                             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-lg font-medium text-[#B944EA] mb-2">
-                            &ldquo;Let your brand be heard. Let&apos;s craft sound that speaks volume together.&rdquo;
-                        </p>
-                        <p className="text-gray-600">Contact us today for a free consultation.</p>
                     </div>
                 </div>
             </section>

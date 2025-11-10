@@ -28,11 +28,37 @@ export default function ContactUs() {
         e.preventDefault()
         setIsSubmitting(true)
         
-        // Simulate form submission
-        await new Promise(resolve => setTimeout(resolve, 2000))
-        
-        setIsSubmitting(false)
-        setIsSubmitted(true)
+        try {
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
+
+            const data = await response.json()
+
+            if (!response.ok) {
+                throw new Error(data.error || "Failed to send email")
+            }
+
+            setIsSubmitted(true)
+            // Reset form after successful submission
+            setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                company: "",
+                service: "",
+                message: ""
+            })
+        } catch (error) {
+            console.error("Error sending email:", error)
+            alert(error.message || "Failed to send message. Please try again later.")
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     const services = [

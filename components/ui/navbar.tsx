@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, PhoneCall } from "lucide-react";
 import { Button } from "./button";
 
 export default function Navbar() {
@@ -98,34 +98,64 @@ export default function Navbar() {
                         {/* Services Mega Menu */}
                         {isServicesOpen && (
                           <div
-                            className="absolute top-full left-1/2 transform -translate-x-1/2 w-[800px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 p-4 animate-in slide-in-from-top-2 duration-300"
+                            className="absolute top-full left-1/2 transform -translate-x-1/2 w-[800px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 p-6 animate-in slide-in-from-top-2 duration-300"
                             onMouseEnter={() => setIsServicesOpen(true)}
                             onMouseLeave={() => setIsServicesOpen(false)}
                           >
-                            <div className="grid grid-cols-2 gap-3">
-                              {services.map((service, index) => (
-                                <Link
-                                  key={index}
-                                  href={service.href || "#"}
-                                  className="block"
-                                >
-                                  <div className="group p-3 rounded-md hover:bg-gradient-to-br hover:from-purple-50 hover:to-cyan-50 transition-all duration-300 cursor-pointer border border-transparent hover:border-purple-200/50">
-                                    <div className="flex items-center space-x-3">
-                                      <span className="text-xl group-hover:scale-110 transition-transform duration-300">
-                                        {service.icon}
-                                      </span>
-                                      <div className="flex-1">
-                                        <h4 className="font-semibold text-sm text-gray-900 group-hover:text-[#B944EA] transition-colors duration-300">
-                                          {service.name}
-                                        </h4>
-                                        <p className="text-xs text-gray-600 mt-1">
-                                          {service.desc}
-                                        </p>
+                            <div className="grid grid-cols-2 gap-4">
+                              {/* First Column */}
+                              <div className="space-y-2">
+                                {services.slice(0, 5).map((service, index) => (
+                                  <Link
+                                    key={index}
+                                    href={service.href || "#"}
+                                    className="block"
+                                  >
+                                    <div className="group p-3 rounded-md hover:bg-gradient-to-br hover:from-purple-50 hover:to-cyan-50 transition-all duration-300 cursor-pointer border border-transparent hover:border-purple-200/50">
+                                      <div className="flex items-center space-x-3">
+                                        <span className="text-xl group-hover:scale-110 transition-transform duration-300">
+                                          {service.icon}
+                                        </span>
+                                        <div className="flex-1">
+                                          <h4 className="font-semibold text-sm text-gray-900 group-hover:text-[#B944EA] transition-colors duration-300">
+                                            {service.name}
+                                          </h4>
+                                          <p className="text-xs text-gray-600 mt-1">
+                                            {service.desc}
+                                          </p>
+                                        </div>
                                       </div>
                                     </div>
-                                  </div>
-                                </Link>
-                              ))}
+                                  </Link>
+                                ))}
+                              </div>
+                              
+                              {/* Second Column */}
+                              <div className="space-y-2">
+                                {services.slice(5, 10).map((service, index) => (
+                                  <Link
+                                    key={index + 5}
+                                    href={service.href || "#"}
+                                    className="block"
+                                  >
+                                    <div className="group p-3 rounded-md hover:bg-gradient-to-br hover:from-purple-50 hover:to-cyan-50 transition-all duration-300 cursor-pointer border border-transparent hover:border-purple-200/50">
+                                      <div className="flex items-center space-x-3">
+                                        <span className="text-xl group-hover:scale-110 transition-transform duration-300">
+                                          {service.icon}
+                                        </span>
+                                        <div className="flex-1">
+                                          <h4 className="font-semibold text-sm text-gray-900 group-hover:text-[#B944EA] transition-colors duration-300">
+                                            {service.name}
+                                          </h4>
+                                          <p className="text-xs text-gray-600 mt-1">
+                                            {service.desc}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </Link>
+                                ))}
+                              </div>
                             </div>
                           </div>
                         )}
@@ -151,12 +181,15 @@ export default function Navbar() {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
-              <Button
-                variant="outline"
-                className="hover:bg-[#B944EA] hover:text-white bg-[#B944EA] text-white font-medium rounded-full cursor-pointer"
-              >
-                Get Quote
-              </Button>
+              <Link href="/contact-us">
+                <Button
+                  variant="outline"
+                  className="hover:bg-[#B944EA]/90 hover:text-white bg-[#B944EA] text-white font-medium rounded-full cursor-pointer"
+                >
+                  <PhoneCall className="h-4 w-4 mr-2" />
+                  Let's connect
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -227,12 +260,15 @@ export default function Navbar() {
           </div>
 
           <div className="mt-6 border-t border-gray-200/50 pt-4">
+            <Link href="/contact-us">
             <Button
               variant="outline"
               className="w-full px-6 py-3 text-[#B944EA] font-medium rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              Get Quote
+              <PhoneCall className="h-4 w-4 mr-2" />
+              Let's connect
             </Button>
+            </Link>
           </div>
         </div>
       )}
