@@ -26,10 +26,10 @@ export default function AboutSection() {
                             About Kusum Innovations
                         </h2>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            At Kusum Innovations, we believe digital success is not just about creating beautiful designs—it's about rediscovering your brand's potential, restoring market confidence, and reclaiming your competitive edge. Located in the heart of Delhi, our agency offers a sanctuary for those seeking comprehensive, creative, and cutting-edge digital solutions.
+                            At Kusum Innovations, we believe digital success is not just about creating beautiful designs—it&apos;s about rediscovering your brand&apos;s potential, restoring market confidence, and reclaiming your competitive edge. Located in the heart of Delhi, our agency offers a sanctuary for those seeking comprehensive, creative, and cutting-edge digital solutions.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            Whether you're launching a new product, managing brand identity, or recovering from digital setbacks, our expert team combines advanced design with evidence-based strategies to create customized solutions tailored to your goals. With a strong emphasis on client education, proactive care, and long-term growth, we help you move forward, feel stronger, and achieve digital excellence, so you can return to the marketplace you love with confidence and ease.
+                            Whether you&apos;re launching a new product, managing brand identity, or recovering from digital setbacks, our expert team combines advanced design with evidence-based strategies to create customized solutions tailored to your goals. With a strong emphasis on client education, proactive care, and long-term growth, we help you move forward, feel stronger, and achieve digital excellence, so you can return to the marketplace you love with confidence and ease.
                         </p>
                         <Link href="/about-us">
                             <Button className="px-8 py-6 bg-[#B944EA] hover:bg-[#A03BD6] text-white font-semibold rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">

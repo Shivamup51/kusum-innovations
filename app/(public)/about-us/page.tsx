@@ -4,8 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ArrowRight, CheckCircle, Star, Users, Target, Eye, Heart, Award, Linkedin, Calendar, MapPin, Phone, Mail } from "lucide-react"
+import { ArrowRight, Users, Target, Eye, Heart, Award, Linkedin } from "lucide-react"
 
 export default function AboutUs() {
     const [activeValue, setActiveValue] = useState(0)
@@ -38,7 +37,7 @@ export default function AboutUs() {
             setActiveValue((prev) => (prev + 1) % coreValues.length)
         }, 4000)
         return () => clearInterval(interval)
-    }, [])
+    }, [coreValues.length])
 
     return (
         <div className="min-h-screen bg-white">
