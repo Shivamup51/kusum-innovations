@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kusum Innovations",
   description: "Kusum Innovations is a digital agency that provides website development, graphic design, video production, and social media marketing services.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
