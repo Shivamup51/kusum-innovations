@@ -1,17 +1,15 @@
 "use client"
 
-import { useParams, useRouter } from "next/navigation"
+import { useParams } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft, Calendar, Clock, User, Tag, Share2, Facebook, Twitter, Linkedin } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, User, Tag, Facebook, Twitter, Linkedin } from "lucide-react"
 import { blogPosts } from "../_components/blogData"
 
 export default function BlogPost() {
     const params = useParams()
-    const router = useRouter()
     const postId = parseInt(params.id as string)
     
     const post = blogPosts.find(p => p.id === postId)
@@ -21,7 +19,7 @@ export default function BlogPost() {
             <div className="min-h-screen bg-white flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">Blog Post Not Found</h1>
-                    <p className="text-gray-600 mb-8">The blog post you're looking for doesn't exist.</p>
+                    <p className="text-gray-600 mb-8">The blog post you&apos;re looking for doesn&apos;t exist.</p>
                     <Link href="/blog" className="inline-flex items-center gap-2 px-6 py-3 bg-[#B944EA] hover:bg-[#A03BD6] text-white font-semibold rounded-full transition-all duration-300">
                         <ArrowLeft className="h-5 w-5" />
                         Back to Blog
@@ -260,7 +258,7 @@ export default function BlogPost() {
                         Ready to Bring Your Ideas to Life?
                     </h2>
                     <p className="text-lg text-gray-600 mb-8">
-                        Let's discuss how we can help transform your vision into reality.
+                        Let&apos;s discuss how we can help transform your vision into reality.
                     </p>
                     <Link 
                         href="/contact-us" 

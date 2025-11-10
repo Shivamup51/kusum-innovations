@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Calendar, Clock, User, Search, TrendingUp, BookOpen, Tag, ChevronRight } from "lucide-react"
+import { Calendar, Clock, User, Search, TrendingUp, BookOpen, Tag, ChevronRight } from "lucide-react"
 import { blogPosts } from "./_components/blogData"
 
 export default function Blog() {
@@ -76,7 +76,7 @@ export default function Blog() {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {featuredPosts.map((post, index) => (
+                        {featuredPosts.map((post) => (
                             <Link key={post.id} href={`/blog/${post.id}`} className="block">
                                 <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 shadow-lg cursor-pointer h-full">
                                     <div className="relative">

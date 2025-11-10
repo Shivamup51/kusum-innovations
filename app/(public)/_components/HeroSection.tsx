@@ -86,10 +86,10 @@ export default function HeroSection() {
                             className="mb-10 space-y-2 animate-fade-in"
                         >
                             <p className="text-xl md:text-2xl text-gray-800 font-semibold">
-                                "{currentSlide.quote1}"
+                                &quot;{currentSlide.quote1}&quot;
                             </p>
                             <p className="text-xl md:text-2xl text-gray-800 font-semibold">
-                                "{currentSlide.quote2}"
+                                &quot;{currentSlide.quote2}&quot;
                             </p>
                         </div>
 

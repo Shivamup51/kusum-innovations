@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
                         <CardContent className="p-8 md:p-12">
                             <Quote className="h-12 w-12 text-[#B944EA] mb-6 opacity-20" />
                             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8 font-light">
-                                "{currentTestimonial.content}"
+                                &quot;{currentTestimonial.content}&quot;
                             </p>
                             <div className="flex items-center gap-4">
                                 {/* Circular Profile Image */}

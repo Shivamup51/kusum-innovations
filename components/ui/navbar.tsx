@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone, PhoneCall } from "lucide-react";
+import { Menu, X, ChevronDown, PhoneCall } from "lucide-react";
 import { Button } from "./button";
 
 export default function Navbar() {
@@ -187,7 +187,7 @@ export default function Navbar() {
                   className="hover:bg-[#B944EA]/90 hover:text-white bg-[#B944EA] text-white font-medium rounded-full cursor-pointer"
                 >
                   <PhoneCall className="h-4 w-4 mr-2" />
-                  Let's connect
+                  Let&apos;s connect
                 </Button>
               </Link>
             </div>
