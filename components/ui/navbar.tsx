@@ -266,7 +266,7 @@ export default function Navbar() {
               className="w-full px-6 py-3 text-[#B944EA] font-medium rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
               <PhoneCall className="h-4 w-4 mr-2" />
-              Let's connect
+              Let&apos;s connect
             </Button>
             </Link>
           </div>
