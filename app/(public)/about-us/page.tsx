@@ -213,7 +213,7 @@ export default function AboutUs() {
                         <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
                             Core <span className="bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">Values</span>
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-xl text-gray-600 max-w-5xl mx-auto">
                             At Kusum Innovations, our growth is rooted in strong values that guide everything we do:
                         </p>
                     </div>
