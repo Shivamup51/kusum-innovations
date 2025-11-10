@@ -123,12 +123,12 @@ export default function VideoProduction() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Single Image */}
             <div className="relative">
-              <div className="aspect-[3/2] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/VIDEO PRODUCTION/introduction.jpg"
                   alt="Our Story - Video Production Team"
                   width={600}
-                  height={550}
+                  height={750}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
