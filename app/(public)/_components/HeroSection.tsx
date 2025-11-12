@@ -12,7 +12,7 @@ const heroSlides = [
         subtitle: "Turning Ideas Into Impact",
         quote1: "We craft exceptional digital experiences",
         quote2: "that drive real business results",
-        image: "/Website Design/Hero section.jpg",
+        image: "/hero.png",
         service: "Website Development"
     },
     {

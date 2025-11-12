@@ -5,55 +5,55 @@ export const animationTypes = [
         title: "Explainer Videos (2D & 3D)",
         description: "Simplify complex products, processes, or services through engaging storytelling. Our 2D and 3D explainer videos combine clear scripting, dynamic visuals, and professional voiceovers to educate audiences effectively. Designed for websites, presentations, and campaigns, these videos increase understanding, improve conversions, and provide your brand with a powerful tool for communication and marketing success.",
         icon: "🎬",
-        image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/Explainer.jpg"
     },
     {
         title: "Character Animation",
         description: "Bring stories to life with character animations full of personality and expression. From mascots to brand ambassadors, our team designs characters that emotionally connect with audiences. Through smooth motion, attention to detail, and creative storytelling, we craft memorable experiences that build stronger brand recall and enhance engagement across digital campaigns, ads, and presentations.",
         icon: "🎭",
-        image: "https://images.unsplash.com/photo-1489599804151-0e4d0b0b5b5b?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/Character Animation.jpg"
     },
     {
         title: "Product Demo Videos",
         description: "Showcase your products with clarity and creativity through engaging product demo videos. Whether in 2D, 3D, or a blend of both, these videos highlight key features, benefits, and real-life use cases. By combining animation, visuals, and storytelling, we help businesses simplify explanations, boost customer confidence, and drive product adoption with presentations that truly resonate.",
         icon: "📦",
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/Product Demo.jpg"
     },
     {
         title: "Classic & Whiteboard Animation",
         description: "Ideal for training, education, or storytelling, our classic 2D animations and whiteboard videos simplify learning and make concepts easy to grasp. With clean illustrations and narrative-driven visuals, these videos deliver information in a memorable way. Businesses use them to explain services, onboard employees, or create tutorials that are clear, engaging, and cost-effective.",
         icon: "✏️",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/WHITEBOARD-15.jpg"
     },
     {
         title: "Motion Graphics",
         description: "Clean, modern, and versatile—motion graphics bring concepts to life with dynamic visuals. Ideal for corporate videos, presentations, and social media, our animations simplify complex ideas into engaging, digestible formats. By combining sleek designs with movement, we deliver content that is easy to understand, highly impactful, and effective in capturing and retaining audience attention.",
         icon: "🎨",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/motion graphics-16.jpg"
     },
     {
         title: "Kinetic Typography",
         description: "Words gain power when they move. With kinetic typography, we animate text in bold, creative styles that emphasize your brand's message. Perfect for ads, campaigns, and explainer videos, this technique combines design precision with rhythm and flow. The result is text-based animations that grab attention, reinforce communication, and leave lasting impressions on viewers.",
         icon: "📝",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/Kinetic Typography-14.jpg"
     },
     {
         title: "Stop-Motion Animation",
         description: "Unique, handcrafted, and visually charming—stop-motion animation delivers storytelling with a distinctive edge. Using frame-by-frame visuals, we create animations that feel organic and creative. Perfect for product showcases, niche campaigns, and artistic projects, stop-motion brings an element of authenticity and imagination that helps brands stand out with quirky, memorable, and visually compelling narratives.",
         icon: "🎪",
-        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/stop motion-17.jpg"
     },
     {
         title: "Visual Effects (VFX)",
         description: "Add cinematic magic to your videos with high-quality VFX. From advanced compositing and CGI integration to realistic 3D environments, we craft visually stunning experiences that transform ordinary content into extraordinary. Whether for commercials, product demos, or brand films, our VFX solutions provide unmatched creativity and polish—elevating your message to a professional, cinematic standard.",
         icon: "✨",
-        image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/VFX.jpg"
     },
     {
         title: "Architectural Visualization",
         description: "Transform architectural concepts into stunning 3D models and walkthroughs. Our visualization services allow clients to showcase buildings, interiors, or landscapes with photo-realistic detail. From real estate to interior design, we bring spaces to life virtually helping businesses present projects persuasively, impress stakeholders, and enable clients to envision results before actual construction begins.",
         icon: "🏗️",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop&crop=center"
+        image: "/2d animation/Architectural Visualization.jpg"
     }
 ]
 

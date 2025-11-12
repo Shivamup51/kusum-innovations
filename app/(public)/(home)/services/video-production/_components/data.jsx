@@ -47,7 +47,7 @@ export const videoTypes = [
         title: "Promotional & Reels Videos",
         description: "Create buzz with engaging promotional videos and Instagram reels that capture attention and boost brand visibility on social media. Designed for high impact in short formats, our videos combine creativity, trends, and storytelling. Whether launching products, promoting campaigns, or building online presence, we deliver content that is scroll-stopping, share-worthy, and designed to maximize reach and engagement.",
         icon: "📱",
-        image: "/VIDEO PRODUCTION/promotional reel videos.jpg"
+        image: "/VIDEO PRODUCTION/promotional  reel videos.jpg"
     },
     {
         title: "Testimonial Videos",
