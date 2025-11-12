@@ -250,24 +250,33 @@ ${message}
       { message: 'Email sent successfully' },
       { status: 200 }
     );
-  } catch (error: any) {
-    console.error('Error sending email:', error);
+  } catch (error: unknown) {
+    // Type-safe error handling
+    const errorObj = error instanceof Error ? error : new Error(String(error));
+    const errorWithDetails = error as Error & { 
+      code?: string; 
+      response?: unknown; 
+      responseCode?: number; 
+      command?: string;
+    };
+
+    console.error('Error sending email:', errorObj);
     console.error('Error details:', {
-      message: error.message,
-      code: error.code,
-      response: error.response,
-      responseCode: error.responseCode,
-      command: error.command
+      message: errorObj.message,
+      code: errorWithDetails.code,
+      response: errorWithDetails.response,
+      responseCode: errorWithDetails.responseCode,
+      command: errorWithDetails.command,
     });
     
     // Return user-friendly error message
     let errorMessage = 'Failed to send email. Please try again later.';
     
-    if (error.message?.includes('Missing required')) {
+    if (errorObj.message?.includes('Missing required')) {
       errorMessage = 'Email service configuration error. Please check your environment variables.';
-    } else if (error.message?.includes('access token') || error.code === 'EAUTH') {
+    } else if (errorObj.message?.includes('access token') || errorWithDetails.code === 'EAUTH') {
       errorMessage = 'Email authentication failed. Please verify your OAuth2 credentials (Client ID, Secret, and Refresh Token) are correct.';
-    } else if (error.responseCode === 535) {
+    } else if (errorWithDetails.responseCode === 535) {
       errorMessage = `Gmail authentication failed (Error 535). This means Gmail rejected your OAuth2 credentials.
 
 Most common causes:
@@ -287,10 +296,10 @@ Most common causes:
 9. Restart your dev server`;
     }
 
-    return NextResponse.json(
+      return NextResponse.json(
       { 
         error: errorMessage,
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        details: process.env.NODE_ENV === 'development' ? errorObj.message : undefined
       },
       { status: 500 }
     );
