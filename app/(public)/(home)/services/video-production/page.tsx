@@ -19,8 +19,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ServiceScroller from "@/components/services/ServiceScroller"
+import ServiceDialog from "@/components/services/ServiceDialog"
+
 export default function VideoProduction() {
   const [activeService, setActiveService] = useState(0);
+  const [selectedService, setSelectedService] = useState<typeof videoTypes[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,6 +33,11 @@ export default function VideoProduction() {
     }, 6000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleServiceClick = (service: typeof videoTypes[0], index: number) => {
+    setSelectedService(service);
+    setIsDialogOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -120,10 +130,10 @@ export default function VideoProduction() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
             {/* Single Image */}
             <div className="relative">
-              <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="h-full rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/VIDEO PRODUCTION/introduction.jpg"
                   alt="Our Story - Video Production Team"
@@ -197,9 +207,9 @@ export default function VideoProduction() {
             </p>
           </div>
 
-          {/* Service Tabs */}
-          <div className="mb-12">
-            <div className="flex flex-nowrap lg:flex-wrap overflow-x-auto lg:overflow-x-visible justify-start lg:justify-center gap-4 px-4 lg:px-0 pb-2 service-tabs-scroll">
+          {/* Service Tabs - Mobile Only */}
+          <div className="mb-12 lg:hidden">
+            <div className="flex flex-nowrap overflow-x-auto justify-start gap-4 px-4 pb-2 service-tabs-scroll">
               {videoTypes.map((service, index) => (
                 <button
                   key={index}
@@ -216,35 +226,52 @@ export default function VideoProduction() {
             </div>
           </div>
 
-          {/* Active Service Display */}
-          <Card className="border-0 shadow-none">
-            <CardContent className="p-0">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <div className="text-4xl mb-6 flex items-center gap-2">
-                    {videoTypes[activeService].icon}
-                    <h3 className="text-3xl font-bold text-gray-900">
-                      {videoTypes[activeService].title}
-                    </h3>
+          {/* Active Service Display - Mobile Only */}
+          <div className="lg:hidden">
+            <Card className="border-0 shadow-none">
+              <CardContent className="p-0">
+                <div className="grid grid-cols-1 gap-12 items-center">
+                  <div>
+                    <div className="text-4xl mb-6 flex items-center gap-2">
+                      {videoTypes[activeService].icon}
+                      <h3 className="text-3xl font-bold text-gray-900">
+                        {videoTypes[activeService].title}
+                      </h3>
+                    </div>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                      {videoTypes[activeService].description}
+                    </p>
                   </div>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    {videoTypes[activeService].description}
-                  </p>
-                </div>
-                <div className="relative">
-                  <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
-                    <Image
-                      src={videoTypes[activeService].image}
-                      alt={videoTypes[activeService].title}
-                      width={800}
-                      height={600}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="relative">
+                    <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+                      <Image
+                        src={videoTypes[activeService].image}
+                        alt={videoTypes[activeService].title}
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Horizontal Scroller - Desktop Only */}
+          <div className="hidden lg:block">
+            <ServiceScroller 
+              services={videoTypes} 
+              onServiceClick={handleServiceClick}
+            />
+          </div>
+
+          {/* Dialog for Service Details */}
+          <ServiceDialog 
+            isOpen={isDialogOpen}
+            onClose={() => setIsDialogOpen(false)}
+            service={selectedService}
+          />
         </div>
       </section>
 
@@ -353,7 +380,7 @@ export default function VideoProduction() {
       {/* Why Choose Us */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
             <div>
               <h2 className="text-5xl font-bold text-gray-900 mb-8">
                 Why Partner with Kusum Innovations?
@@ -373,7 +400,7 @@ export default function VideoProduction() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="h-full rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/VIDEO PRODUCTION/why choose us.jpg"
                   alt="Our Team"

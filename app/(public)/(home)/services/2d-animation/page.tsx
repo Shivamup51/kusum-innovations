@@ -9,9 +9,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Play, ArrowRight, CheckCircle } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import ServiceScroller from "@/components/services/ServiceScroller"
+import ServiceDialog from "@/components/services/ServiceDialog"
 
 export default function Animation2D() {
     const [activeService, setActiveService] = useState(0)
+    const [selectedService, setSelectedService] = useState<typeof animationTypes[0] | null>(null)
+    const [isDialogOpen, setIsDialogOpen] = useState(false)
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -19,6 +23,11 @@ export default function Animation2D() {
         }, 6000)
         return () => clearInterval(interval)
     }, [])
+
+    const handleServiceClick = (service: typeof animationTypes[0], index: number) => {
+        setSelectedService(service)
+        setIsDialogOpen(true)
+    }
 
     return (
         <div className="min-h-screen bg-white">
@@ -74,7 +83,7 @@ export default function Animation2D() {
                                 {/* Main Image */}
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                     <Image 
-                                        src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=450&fit=crop&crop=center" 
+                                        src="/2d animation/Hero Section.jpg" 
                                         alt="2D Animation Services" 
                                         width={600}
                                         height={450}
@@ -97,12 +106,12 @@ export default function Animation2D() {
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
                         {/* Single Image */}
                         <div className="relative">
-                            <div className="aspect-[3/2] rounded-3xl overflow-hidden shadow-2xl">
+                            <div className="h-full rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=450&fit=crop&crop=center" 
+                                    src="/2d animation/Introduction Section.jpg" 
                                     alt="Our Story - Animation Team" 
                                     width={600}
                                     height={550}
@@ -142,9 +151,9 @@ export default function Animation2D() {
                         </p>
                     </div>
 
-                    {/* Service Tabs */}
-                    <div className="mb-12">
-                        <div className="flex flex-nowrap lg:flex-wrap overflow-x-auto lg:overflow-x-visible justify-start lg:justify-center gap-4 px-4 lg:px-0 pb-2 service-tabs-scroll">
+                    {/* Service Tabs - Mobile Only */}
+                    <div className="mb-12 lg:hidden">
+                        <div className="flex flex-nowrap overflow-x-auto justify-start gap-4 px-4 pb-2 service-tabs-scroll">
                             {animationTypes.map((service, index) => (
                                 <button
                                     key={index}
@@ -161,35 +170,52 @@ export default function Animation2D() {
                         </div>
                     </div>
 
-                    {/* Active Service Display */}
-                    <Card className="border-0 shadow-none">
-                        <CardContent className="p-0">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                                <div>
-                                    <div className="text-4xl mb-6 flex items-center gap-2">
-                                        {animationTypes[activeService].icon}
-                                        <h3 className="text-3xl font-bold text-gray-900">
-                                            {animationTypes[activeService].title}
-                                        </h3>
+                    {/* Active Service Display - Mobile Only */}
+                    <div className="lg:hidden">
+                        <Card className="border-0 shadow-none">
+                            <CardContent className="p-0">
+                                <div className="grid grid-cols-1 gap-12 items-center">
+                                    <div>
+                                        <div className="text-4xl mb-6 flex items-center gap-2">
+                                            {animationTypes[activeService].icon}
+                                            <h3 className="text-3xl font-bold text-gray-900">
+                                                {animationTypes[activeService].title}
+                                            </h3>
+                                        </div>
+                                        <p className="text-lg text-gray-600 leading-relaxed">
+                                            {animationTypes[activeService].description}
+                                        </p>
                                     </div>
-                                    <p className="text-lg text-gray-600 leading-relaxed">
-                                        {animationTypes[activeService].description}
-                                    </p>
-                                </div>
-                                <div className="relative">
-                                    <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
-                                        <Image 
-                                            src={animationTypes[activeService].image} 
-                                            alt={animationTypes[activeService].title}
-                                            width={800}
-                                            height={600}
-                                            className="w-full h-full object-cover"
-                                        />
+                                    <div className="relative">
+                                        <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+                                            <Image 
+                                                src={animationTypes[activeService].image} 
+                                                alt={animationTypes[activeService].title}
+                                                width={800}
+                                                height={600}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </CardContent>
-                    </Card>
+                            </CardContent>
+                        </Card>
+                    </div>
+
+                    {/* Horizontal Scroller - Desktop Only */}
+                    <div className="hidden lg:block">
+                        <ServiceScroller 
+                            services={animationTypes} 
+                            onServiceClick={handleServiceClick}
+                        />
+                    </div>
+
+                    {/* Dialog for Service Details */}
+                    <ServiceDialog 
+                        isOpen={isDialogOpen}
+                        onClose={() => setIsDialogOpen(false)}
+                        service={selectedService}
+                    />
                 </div>
             </section>
 
@@ -255,14 +281,14 @@ export default function Animation2D() {
                                             <Image 
                                                 src={
                                                     index === 0 
-                                                        ? "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/2d animation/process step 1.jpg"
                                                         : index === 1
-                                                        ? "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/2d animation/process step 2.jpg"
                                                         : index === 2
-                                                        ? "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/2d animation/process step 3.jpg"
                                                         : index === 3
-                                                        ? "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop&crop=center"
-                                                        : "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop&crop=center"
+                                                        ? "/2d animation/process step 4.jpg"
+                                                        : "/2d animation/process step 5.jpg"
                                                 }
                                                 alt={step.title}
                                                 width={800}
@@ -281,7 +307,7 @@ export default function Animation2D() {
             {/* Why Choose Us */}
             <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
                         <div>
                             <h2 className="text-5xl font-bold text-gray-900 mb-8">Why Partner with Kusum Innovations?</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -297,9 +323,9 @@ export default function Animation2D() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+                            <div className="h-full rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=450&fit=crop&crop=center" 
+                                    src="/2d animation/why choose us.jpg" 
                                     alt="Our Team" 
                                     width={800}
                                     height={450}
