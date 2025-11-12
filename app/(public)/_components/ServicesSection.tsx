@@ -29,7 +29,7 @@ const services = [
         title: "2D & 3D Animation",
         description: "Captivating animations that bring your ideas and products to life. Whether it's explainer videos or character animations, we create memorable visual experiences.",
         link: "/services/2d-animation",
-        image: "/VIDEO PRODUCTION/hero section.jpg"
+        image: "/2d animation/Hero Section.jpg"
     },
     {
         title: "Mobile App Development",
