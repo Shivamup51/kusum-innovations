@@ -7,7 +7,7 @@ export default function LogoCloud() {
             <div className="group relative m-auto max-w-7xl px-6">
                 <div className="flex flex-col items-center md:flex-row">
                     <div className="md:max-w-44 md:border-r md:pr-6">
-                        <p className="text-end text-lg">Partners with Kusum Innovations</p>
+                        <p className="text-end text-xl font-bold">Trusted by</p>
                     </div>
                     <div className="relative py-6 md:w-[calc(100%-11rem)]">
                         <InfiniteSlider

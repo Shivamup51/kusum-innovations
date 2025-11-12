@@ -71,7 +71,19 @@ export default function HeroSection() {
                             key={`title-${currentSlideIndex}`}
                             className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight tracking-tight mb-4 animate-fade-in"
                         >
-                            <span className="block">{currentSlide.title}</span>
+                            {(() => {
+                                const words = currentSlide.title.split(' ')
+                                const lastTwoWords = words.slice(-2).join(' ')
+                                const restWords = words.slice(0, -2).join(' ')
+                                return (
+                                    <span className="block">
+                                        {restWords && `${restWords} `}
+                                        <span className="bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">
+                                            {lastTwoWords}
+                                        </span>
+                                    </span>
+                                )
+                            })()}
                         </h1>
 
                         <p 
