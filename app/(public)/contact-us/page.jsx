@@ -133,7 +133,7 @@ export default function ContactUs() {
             color: "text-blue-700"
         },
         {
-            name: "Twitter (x)",
+            name: "X",
             url: "https://x.com/kusuminnovation/",
             icon: X,
             color: "text-gray-900"
@@ -175,7 +175,7 @@ export default function ContactUs() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=600&fit=crop&crop=center" 
+                                    src="/HERO SECTION.jpg" 
                                     alt="Contact Us" 
                                     width={800}
                                     height={600}

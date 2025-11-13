@@ -12,14 +12,14 @@ const stats = [
         description: "Trusted by businesses worldwide"
     },
     {
-        number: "10+",
+        number: "9+",
         label: "Years of Experience",
-        description: "Delivering excellence since 2014"
+        description: "Delivering excellence since 2016"
     },
     {
-        number: "50+",
+        number: "20+",
         label: "Team Members",
-        description: "Expert professionals dedicated to your success"
+        description: "Expert dedicated to your success"
     }
 ]
 
@@ -29,10 +29,10 @@ export default function StatsSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-                        Our Experience By The Numbers
+                        A Legacy of Excellence, Measured in Impact
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Trust your digital success to our experienced team with a proven track record of excellence and client satisfaction.
+                        Each milestone reflects our commitment to creativity, innovation, and lasting partnerships that drive meaningful digital success.
                     </p>
                 </div>
 

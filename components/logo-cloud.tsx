@@ -1,6 +1,28 @@
 import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 
+const logos = [
+    { src: '/logos/Clientele Logos/Animall.png', alt: 'Animall Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/BDA group-01.png', alt: 'BDA Group Logo', width: 320, height: 200 },
+    { src: '/logos/Clientele Logos/dorling-kindersley-seeklogo.png', alt: 'Dorling Kindersley Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/GHRD.webp', alt: 'GHRD Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/growtrees-01.png', alt: 'Growtrees Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Healofy.webp', alt: 'Healofy Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/iihd-01.png', alt: 'IIHD Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Isoft Logo-01.png', alt: 'Isoft Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/kisan agri-01.png', alt: 'Kisan Agri Logo', width: 320, height: 160 },
+    { src: '/logos/Clientele Logos/Morepen-01.png', alt: 'Morepen Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/niva-bupa-health-insurance-logo-hd.png', alt: 'Niva Bupa Health Insurance Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Nostinos-01.png', alt: 'Nostinos Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Springer Nature.png', alt: 'Springer Nature Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Sunglow Logo.PNG', alt: 'Sunglow Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Supreme.png', alt: 'Supreme Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Uncle Delivery Logo-01.png', alt: 'Uncle Delivery Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Vivo.png', alt: 'Vivo Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Wiley.png', alt: 'Wiley Logo', width: 160, height: 80 },
+    { src: '/logos/Clientele Logos/Wolters Kluwer.png', alt: 'Wolters Kluwer Logo', width: 160, height: 80 },
+]
+
 export default function LogoCloud() {
     return (
         <section className="bg-background overflow-hidden py-16">
@@ -14,80 +36,17 @@ export default function LogoCloud() {
                             speedOnHover={20}
                             speed={40}
                             gap={112}>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-5 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                                    alt="Nvidia Logo"
-                                    height="20"
-                                    width="auto"
-                                />
-                            </div>
-
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/column.svg"
-                                    alt="Column Logo"
-                                    height="16"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/github.svg"
-                                    alt="GitHub Logo"
-                                    height="16"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-5 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/nike.svg"
-                                    alt="Nike Logo"
-                                    height="20"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-5 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                                    alt="Lemon Squeezy Logo"
-                                    height="20"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/laravel.svg"
-                                    alt="Laravel Logo"
-                                    height="16"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-7 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/lilly.svg"
-                                    alt="Lilly Logo"
-                                    height="28"
-                                    width="auto"
-                                />
-                            </div>
-
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-6 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/openai.svg"
-                                    alt="OpenAI Logo"
-                                    height="24"
-                                    width="auto"
-                                />
-                            </div>
+                            {logos.map((logo, index) => (
+                                <div key={index} className="flex h-20 w-40 items-center justify-center">
+                                    <img
+                                        className="mx-auto h-20 w-40 object-contain dark:invert"
+                                        src={logo.src}
+                                        alt={logo.alt}
+                                        width={logo.width}
+                                        height={logo.height}
+                                    />
+                                </div>
+                            ))}
                         </InfiniteSlider>
 
                         <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-20"></div>

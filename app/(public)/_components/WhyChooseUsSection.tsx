@@ -8,22 +8,22 @@ const features = [
     {
         icon: Users,
         title: "Expert Team",
-        description: "Certified professionals skilled in design, development, and digital marketing"
+        description: "Certified professionals specializing in video production, design, development, and digital marketing."
     },
     {
         icon: Target,
         title: "Results-Driven",
-        description: "Every project tailored to your business goals and measurable outcomes"
+        description: "Every project crafted to align with your business goals and deliver measurable impact."
     },
     {
         icon: Zap,
         title: "Modern Solutions",
-        description: "Cutting-edge tools and technologies in a fast-paced digital environment"
+        description: "Leveraging advanced tools and technologies to keep you ahead in a dynamic digital world."
     },
     {
         icon: Award,
         title: "Proven Track Record",
-        description: "Transparent tracking with measurable results and client satisfaction"
+        description: "Transparent processes, consistent results, and trusted client partnerships built on satisfaction."
     }
 ]
 
@@ -46,7 +46,7 @@ export default function WhyChooseUsSection() {
                         Why Choose Kusum Innovations
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Excellence That Moves You Forward – Advanced solutions, personalized service, and results-driven support.
+                        Excellence That Drives You Forward – Innovative solutions, personalized approach, and performance-focused support.
                     </p>
                 </div>
 

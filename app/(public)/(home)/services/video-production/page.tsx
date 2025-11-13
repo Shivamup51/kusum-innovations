@@ -147,7 +147,7 @@ export default function VideoProduction() {
             {/* Content */}
             <div>
               <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                Our Story,
+                Your Story,
                 <span className="bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">
                   {" "}
                   Our Lens
