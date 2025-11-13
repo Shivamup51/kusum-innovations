@@ -11,7 +11,6 @@ const testimonials = [
         name: "Dr Jayeeta Bhattacharjee",
         role: "Regional Manager-Corporate Sales @ Wiley",
         content: "Pooja is a thorough professional. She patiently discusses and understands her client's requirements and efficiently executes them. She is an absolute \"Go-Getter\" and wouldn't stop until she has delivered her best. I have known her for almost 8+ years and have developed a strong friendship while working together. She has the quality to go the extra mile for her customers each time, she is honest and punctual, and above all extremely cost-efficient. I wish her all the luck and may her hard work take her to the heights of success.",
-        company: "Wiley",
         image: ""
     },
     {
@@ -19,7 +18,6 @@ const testimonials = [
         name: "Soni Chauhan",
         role: "Head - People and Culture- ISOFT Group",
         content: "I highly recommend KI as a reliable and creative partner for corporate gifting and video production. We have worked with them for the past two years, and they have consistently delivered exceptional quality and timely results. Their team brings innovative ideas, attention to detail, and a strong commitment to client satisfaction. From thoughtful gifting solutions to impactful video campaigns, KI ensures every project reflects creativity and professionalism. They are a dependable partner for brands looking to create lasting impressions through meaningful and engaging experiences.",
-        company: "ISOFT Group",
         image: ""
     },
     {
@@ -27,7 +25,6 @@ const testimonials = [
         name: "Sneha Pathak",
         role: "Co-Founder- Jomiso Consulting",
         content: "She was very patient with all my requests and bringing my idea to life. Her creativity, hard work and professional ethics are commendable. I had a great experience while working with her.",
-        company: "Jomiso Consulting",
         image: ""
     },
     {
@@ -35,7 +32,6 @@ const testimonials = [
         name: "Vikalp Sharma",
         role: "People Development- VIVO",
         content: "We at VIVO India were looking for a team who could fulfil our requirement in a short span of time. Pooja & her team ensured that the project was completed well before timeline with minimum follow ups. One of the few people I have come across who is dedicated to work as if her entire career is at stake. It has further enhanced the reputation. Will work in future on other projects. Keep up the good work.",
-        company: "VIVO",
         image: ""
     },
     {
@@ -43,7 +39,6 @@ const testimonials = [
         name: "Subrata Namnit Patra",
         role: "Managing Partner @ IdeaCapital",
         content: "I have known Pooja for quite a few numbers of years. She has worked directly with me and helped and supported our teams on several challenging projects. She is smart, dedicated, and hard-working. Her hands-on and varied experience in the startup ecosystem has helped her coordinate highly effectively. Also, her working closely with people (startups, colleagues, and others) has made her suitable for an analyst role.",
-        company: "IdeaCapital",
         image: ""
     },
     {
@@ -51,7 +46,6 @@ const testimonials = [
         name: "Suneel Kumar",
         role: "Partner @Aristotle Consultancy",
         content: "We have worked on couple of projects with Pooja and her team and we are happy the way they manage projects. Best quality, competitive budgets and always approachable team. I recommend Pooja and her team for their best services and professional approach to complete the tasks. They were always approachable during and after the project and consider all our requests positively.",
-        company: "Aristotle Consultancy",
         image: ""
     },
     {
@@ -59,7 +53,6 @@ const testimonials = [
         name: "Kanika Manocha",
         role: "Human Resource Manager- ID Tech",
         content: "Pooja was our vendor when we were looking for corporate gifting solutions. She is a very grounded always focused on delivering the best service. She believes in building strong client relationships. She puts in sincere efforts to ensure client satisfaction and always goes the extra mile to meet expectations. I highly recommend Pooja for her dedication, and client-focused approach.",
-        company: "ID Tech",
         image: ""
     }
 ]
@@ -127,11 +120,6 @@ export default function TestimonialsSection() {
                                     {currentTestimonial.role && (
                                         <p className="text-gray-600">
                                             {currentTestimonial.role}
-                                        </p>
-                                    )}
-                                    {currentTestimonial.company && (
-                                        <p className="text-sm text-[#B944EA] font-semibold mt-1">
-                                            {currentTestimonial.company}
                                         </p>
                                     )}
                                 </div>
