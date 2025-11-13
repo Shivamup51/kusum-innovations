@@ -79,7 +79,7 @@ export default function ContactUs() {
         {
             icon: Phone,
             title: "Phone",
-            details: ["9654159277", "9873846683"]
+            details: ["9654159277 ,", "9873846683"]
         },
         {
             icon: Mail,
@@ -94,7 +94,7 @@ export default function ContactUs() {
         {
             icon: Clock,
             title: "Timing",
-            details: ["Monday to Saturday", "10:00 am to 7:00 pm"]
+            details: ["Monday to Saturday :", "10:00 am to 7:00 pm"]
         }
     ]
 
@@ -175,7 +175,7 @@ export default function ContactUs() {
                         <div className="relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image 
-                                    src="/HERO SECTION.jpg" 
+                                    src="/contact-us.jpg" 
                                     alt="Contact Us" 
                                     width={800}
                                     height={600}
