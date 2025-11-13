@@ -6,7 +6,7 @@ import {
     Facebook, 
     Instagram, 
     Linkedin, 
-    Twitter, 
+    X, 
     Youtube, 
     MessageCircle, 
     Mail, 
@@ -55,10 +55,10 @@ export default function Footer() {
             color: "hover:text-blue-700"
         },
         {
-            name: "Twitter",
+            name: "X",
             url: "https://x.com/kusuminnovation/",
-            icon: Twitter,
-            color: "hover:text-blue-400"
+            icon: X,
+            color: "hover:text-gray-900"
         },
         {
             name: "YouTube",
@@ -94,8 +94,7 @@ export default function Footer() {
                             <span className="text-lg font-semibold leading-7">Kusum Innovations</span>
                         </div>
                         <p className="text-gray-300 leading-relaxed">
-                            We create powerful digital experiences that captivate, connect, and convert. 
-                            From strategy to execution, we bring your vision to life with creativity and precision.
+                            We craft impactful digital experiences that inspire and drive results—transforming your vision into reality through creativity and precision. Your trusted partner for digital marketing, video production, and meaningful brand growth.
                         </p>
                     </div>
 

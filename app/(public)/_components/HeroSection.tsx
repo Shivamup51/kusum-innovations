@@ -8,36 +8,36 @@ import { ArrowRight } from "lucide-react"
 
 const heroSlides = [
     {
-        title: "Transform Your Digital Presence",
-        subtitle: "Turning Ideas Into Impact",
-        quote1: "We craft exceptional digital experiences",
-        quote2: "that drive real business results",
-        image: "/hero.png",
-        service: "Website Development"
-    },
-    {
-        title: "Create Stunning Visual Experiences",
-        subtitle: "Design That Speaks Your Brand",
-        quote1: "Visual storytelling that captivates",
-        quote2: "and converts your audience",
-        image: "/Designing/Hero section.jpg",
-        service: "Designing"
-    },
-    {
-        title: "Build Brands That Inspire",
-        subtitle: "Strategic Marketing Solutions",
-        quote1: "Data-driven campaigns that",
-        quote2: "grow your business exponentially",
-        image: "/SMM/Hero.jpg",
-        service: "Social Media Marketing"
-    },
-    {
-        title: "Drive Growth Through Innovation",
-        subtitle: "Cutting-Edge Digital Solutions",
-        quote1: "Innovative technology meets",
-        quote2: "creative excellence",
-        image: "/VIDEO PRODUCTION/hero section.jpg",
+        title: "Create. Captivate. Communicate.",
+        subtitle: "Visual stories that connect.",
+        quote1: "Transforming ideas into motion that inspire, engage, and endure.",
+        quote2: "",
+        image: "/home/video.jpg",
         service: "Video Production"
+    },
+    {
+        title: "Capture Every Moment.",
+        subtitle: "Frames that tell stories.",
+        quote1: "Turning every shot into emotion, every image into impact.",
+        quote2: "",
+        image: "/home/photo.jpg",
+        service: "Photography"
+    },
+    {
+        title: "Innovate. Create. Elevate.",
+        subtitle: "Your brand, reimagined digitally.",
+        quote1: "From concept to creation, we build experiences that drive success.",
+        quote2: "",
+        image: "/home/all-in-one.jpg",
+        service: "General / All-in-One"
+    },
+    {
+        title: "Where Creativity Meets Strategy.",
+        subtitle: "Ideas built for impact.",
+        quote1: "We design, market, and produce to make brands shine brighter.",
+        quote2: "",
+        image: "/home/creative.jpg",
+        service: "General (Creative Agency Focus)"
     }
 ]
 
@@ -69,21 +69,11 @@ export default function HeroSection() {
                     <div className="text-left z-10">
                         <h1 
                             key={`title-${currentSlideIndex}`}
-                            className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight tracking-tight mb-4 animate-fade-in"
+                            className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight mb-4 animate-fade-in"
                         >
-                            {(() => {
-                                const words = currentSlide.title.split(' ')
-                                const lastTwoWords = words.slice(-2).join(' ')
-                                const restWords = words.slice(0, -2).join(' ')
-                                return (
-                                    <span className="block">
-                                        {restWords && `${restWords} `}
-                                        <span className="bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">
-                                            {lastTwoWords}
-                                        </span>
-                                    </span>
-                                )
-                            })()}
+                            <span className="block bg-gradient-to-r from-[#B944EA] to-[#00B7FF] bg-clip-text text-transparent">
+                                {currentSlide.title}
+                            </span>
                         </h1>
 
                         <p 
@@ -93,17 +83,21 @@ export default function HeroSection() {
                             {currentSlide.subtitle}
                         </p>
 
-                        <div 
-                            key={`quotes-${currentSlideIndex}`}
-                            className="mb-10 space-y-2 animate-fade-in"
-                        >
-                            <p className="text-xl md:text-2xl text-gray-800 font-semibold">
-                                &quot;{currentSlide.quote1}&quot;
-                            </p>
-                            <p className="text-xl md:text-2xl text-gray-800 font-semibold">
-                                &quot;{currentSlide.quote2}&quot;
-                            </p>
-                        </div>
+                        {currentSlide.quote1 && (
+                            <div 
+                                key={`quotes-${currentSlideIndex}`}
+                                className="mb-10 space-y-2 animate-fade-in"
+                            >
+                                <p className="text-xl md:text-2xl text-gray-800 font-semibold">
+                                    &quot;{currentSlide.quote1}&quot;
+                                </p>
+                                {currentSlide.quote2 && (
+                                    <p className="text-xl md:text-2xl text-gray-800 font-semibold">
+                                        &quot;{currentSlide.quote2}&quot;
+                                    </p>
+                                )}
+                            </div>
+                        )}
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-6">
                             <Link href="/contact-us" className="w-full sm:w-auto">
