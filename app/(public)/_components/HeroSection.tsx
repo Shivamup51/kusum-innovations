@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react"
 
 const heroSlides = [
     {
-        title: "Create. Captivate. Communicate.",
+        title: "Create, Captivate, Communicate",
         subtitle: "Visual stories that connect.",
         quote1: "Transforming ideas into motion that inspire, engage, and endure.",
         quote2: "",
@@ -16,7 +16,7 @@ const heroSlides = [
         service: "Video Production"
     },
     {
-        title: "Capture Every Moment.",
+        title: "Capture Every Moment",
         subtitle: "Frames that tell stories.",
         quote1: "Turning every shot into emotion, every image into impact.",
         quote2: "",
@@ -24,7 +24,7 @@ const heroSlides = [
         service: "Photography"
     },
     {
-        title: "Innovate. Create. Elevate.",
+        title: "Innovate, Create, Elevate",
         subtitle: "Your brand, reimagined digitally.",
         quote1: "From concept to creation, we build experiences that drive success.",
         quote2: "",
@@ -32,7 +32,7 @@ const heroSlides = [
         service: "General / All-in-One"
     },
     {
-        title: "Where Creativity Meets Strategy.",
+        title: "Where Creativity Meets Strategy",
         subtitle: "Ideas built for impact.",
         quote1: "We design, market, and produce to make brands shine brighter.",
         quote2: "",
@@ -47,7 +47,7 @@ export default function HeroSection() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlideIndex((prev) => (prev + 1) % heroSlides.length)
-        }, 5000) // Change slide every 5 seconds
+        }, 3000) // Change slide every 3 seconds
 
         return () => clearInterval(interval)
     }, [])
