@@ -23,14 +23,6 @@ const testimonials = [
         image: ""
     },
     {
-        id: 3,
-        name: "CA Rohit Batra",
-        role: "",
-        content: "It's great working with Pooja. She understands what her client needs and provides the solution accordingly. Her supportive nature adds a glare to her amazing skills in video making.",
-        company: "",
-        image: ""
-    },
-    {
         id: 4,
         name: "Sneha Pathak",
         role: "Co-Founder- Jomiso Consulting",
