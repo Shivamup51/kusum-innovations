@@ -19,6 +19,18 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
+
   const services = [
     { name: "Designing", icon: "🎨", desc: "Creative visual solutions", href: "/services/designing" },
     { name: "Website Development", icon: "💻", desc: "Modern web experiences", href: "/services/website-development" },
@@ -210,67 +222,114 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Navigation - Simple dropdown */}
+      {/* Mobile Navigation - Side Drawer */}
       {isMenuOpen && (
-        <div className="lg:hidden w-full bg-white/95 backdrop-blur-xl shadow-lg border-t border-gray-200/50 px-6 py-4 mt-20">
-          <div className="space-y-2">
-            {navItems.map((item) => (
-              <div key={item.name}>
-                {item.hasDropdown ? (
-                  <div>
-                    <button
-                      onClick={() => setIsServicesOpen(!isServicesOpen)}
-                      className="w-full flex items-center justify-between px-2 py-3 text-gray-700 hover:text-[#B944EA] hover:bg-gray-50/50 rounded-lg transition-all duration-200"
-                    >
-                      <span className="font-medium">{item.name}</span>
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-200 ${
-                          isServicesOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
+        <>
+          {/* Backdrop */}
+          <div
+            className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          />
+          
+          {/* Side Drawer */}
+          <div
+            className={`lg:hidden fixed top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            {/* Drawer Header */}
+            <div className="flex items-center justify-between px-6 py-6 border-b border-gray-200/50">
+              <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center space-x-3">
+                <div className="relative">
+                  <Image
+                    src="/logo.png"
+                    alt="Kusum Innovations Logo"
+                    width={40}
+                    height={40}
+                    className="h-10 w-10 rounded-full"
+                  />
+                </div>
+                <span className="text-lg font-semibold text-gray-900">Kusum Innovations</span>
+              </Link>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                aria-label="Close menu"
+              >
+                <X className="h-6 w-6 text-gray-700" />
+              </button>
+            </div>
 
-                    {isServicesOpen && (
-                      <div className="ml-4 mt-2 space-y-1">
-                        {services.map((service, index) => (
-                          <Link
-                            key={index}
-                            href={service.href || "#"}
-                            onClick={() => setIsMenuOpen(false)}
-                            className="flex items-center space-x-3 px-2 py-2 text-gray-600 hover:text-[#B944EA] hover:bg-gray-50/50 rounded-lg transition-all duration-200"
-                          >
-                            <span className="text-lg">{service.icon}</span>
-                            <span className="text-sm">{service.name}</span>
-                          </Link>
-                        ))}
+            {/* Drawer Content */}
+            <div className="flex flex-col h-[calc(100%-80px)] overflow-y-auto">
+              <div className="flex-1 px-6 py-6 space-y-1">
+                {navItems.map((item) => (
+                  <div key={item.name}>
+                    {item.hasDropdown ? (
+                      <div>
+                        <button
+                          onClick={() => setIsServicesOpen(!isServicesOpen)}
+                          className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:text-[#B944EA] hover:bg-gray-50/50 rounded-lg transition-all duration-200 font-medium"
+                        >
+                          <span>{item.name}</span>
+                          <ChevronDown
+                            className={`h-4 w-4 transition-transform duration-200 ${
+                              isServicesOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+
+                        {isServicesOpen && (
+                          <div className="ml-4 mt-2 space-y-1">
+                            {services.map((service, index) => (
+                              <Link
+                                key={index}
+                                href={service.href || "#"}
+                                onClick={() => setIsMenuOpen(false)}
+                                className="flex items-center space-x-3 px-4 py-2.5 text-gray-600 hover:text-[#B944EA] hover:bg-gray-50/50 rounded-lg transition-all duration-200"
+                              >
+                                <span className="text-lg">{service.icon}</span>
+                                <span className="text-sm font-medium">{service.name}</span>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="block px-4 py-3 text-gray-700 hover:text-[#B944EA] hover:bg-gray-50/50 rounded-lg transition-all duration-200 font-medium"
+                      >
+                        {item.name}
+                      </Link>
                     )}
                   </div>
-                ) : (
-                  <Link
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block px-2 py-3 text-gray-700 hover:text-[#B944EA] hover:bg-gray-50/50 rounded-lg transition-all duration-200 font-medium"
-                  >
-                    {item.name}
-                  </Link>
-                )}
+                ))}
               </div>
-            ))}
-          </div>
 
-          <div className="mt-6 border-t border-gray-200/50 pt-4">
-            <Link href="/contact-us">
-            <Button
-              variant="outline"
-              className="w-full px-6 py-3 text-[#B944EA] font-medium rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer"
-            >
-              <PhoneCall className="h-4 w-4 mr-2" />
-              Let&apos;s connect
-            </Button>
-            </Link>
+              {/* Drawer Footer - CTA Buttons */}
+              <div className="px-6 py-6 border-t border-gray-200/50">
+                <Link href="/contact-us" onClick={() => setIsMenuOpen(false)} className="block mb-4">
+                  <Button
+                    variant="outline"
+                    className="w-full px-6 py-3 bg-gradient-to-r from-[#B944EA] to-[#00B7FF] text-white font-medium rounded-full hover:opacity-90 transition-all duration-300 cursor-pointer border-0"
+                  >
+                    <PhoneCall className="h-4 w-4 mr-2" />
+                    Let&apos;s connect
+                  </Button>
+                </Link>
+                <a
+                  href="tel:+919654159277"
+                  className="flex items-center justify-center w-full px-6 py-3 border-2 border-[#B944EA] text-[#B944EA] font-medium rounded-full hover:bg-[#B944EA] hover:text-white transition-all duration-300"
+                >
+                  <PhoneCall className="h-4 w-4 mr-2" />
+                  +91 9654159277
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );
