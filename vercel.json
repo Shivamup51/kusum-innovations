@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/webmail",
+      "destination": "https://sg3plcpnl0225.prod.sin3.secureserver.net:2096",
+      "permanent": true
+    }
+  ]
+}
