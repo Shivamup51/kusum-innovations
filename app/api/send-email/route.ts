@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 /**
- * Gmail transporter using App Password
+ * Create Gmail transporter using App Password
  */
 function createTransporter() {
   const user = process.env.GMAIL_USER;
@@ -21,11 +21,21 @@ function createTransporter() {
   });
 }
 
+interface ContactFormPayload {
+  name: string;
+  email: string;
+  phone?: string;
+  company?: string;
+  service?: string;
+  message: string;
+}
+
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, company, service, message } = await req.json();
+    const body = (await req.json()) as ContactFormPayload;
+    const { name, email, phone, company, service, message } = body;
 
-    // basic validation
+    // Validation
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Name, email and message are required" },
@@ -38,9 +48,9 @@ export async function POST(req: NextRequest) {
     const CONTACT_EMAIL = process.env.CONTACT_EMAIL || process.env.GMAIL_USER;
 
     await transporter.sendMail({
-      from: `Contact Form <${process.env.GMAIL_USER}>`, // always YOUR email
-      to: CONTACT_EMAIL, // always YOUR inbox
-      replyTo: email, // 👈 USER email (dynamic, unlimited users)
+      from: `Contact Form <${process.env.GMAIL_USER}>`, // always your Gmail
+      to: CONTACT_EMAIL, // your inbox
+      replyTo: email, // 👈 user email (dynamic)
       subject: `New Contact Form Submission${service ? ` - ${service}` : ""}`,
       text: `
 Name: ${name}
@@ -80,14 +90,16 @@ ${message}
       { message: "Email sent successfully" },
       { status: 200 }
     );
-  } catch (err: any) {
-    console.error("Email error:", err);
+  } catch (err: unknown) {
+    const error = err instanceof Error ? err : new Error("Unknown error");
+
+    console.error("❌ Email send failed:", error);
 
     return NextResponse.json(
       {
         error: "Failed to send email",
         details:
-          process.env.NODE_ENV === "development" ? err.message : undefined,
+          process.env.NODE_ENV === "development" ? error.message : undefined,
       },
       { status: 500 }
     );
